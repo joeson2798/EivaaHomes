@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eivaa Homes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              heading: ['"Inria Serif"', "serif"],
+              paragraph: ['"Inria Sans"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans&family=Inria+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="font-sans bg-[#fdfaf5]">
+    <!-- Header -->
+    <header class="bg-[#fdfaf5]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <a href="#" class="flex items-center space-x-2">
+            <img src="./images/eivaa icon.png" alt="Logo" class="h-10" />
+            <span class="font-semibold tracking-wide hidden">HOMESS</span>
+          </a>
+
+          <!-- Desktop Menu -->
+          <nav
+            class="hidden md:flex space-x-6 items-center text-sm font-medium"
+          >
+            <a href="#" class="text-[#b66a00]">HOME</a>
+            <a href="#" class="hover:text-[#b66a00]">ABOUT US</a>
+            <a href="#" class="hover:text-[#b66a00]">GALLERY</a>
+            <a href="#" class="hover:text-[#b66a00]">PROJECTS</a>
+            <a href="#" class="hover:text-[#b66a00]">CONTACT</a>
+          </nav>
+
+          <!-- Hamburger -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              class="text-gray-800 focus:outline-none text-2xl"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col space-y-3 pb-4">
+          <a href="#" class="block text-sm text-[#b66a00]">HOME</a>
+          <a href="#" class="block text-sm hover:text-[#b66a00]">ABOUT US</a>
+          <a href="#" class="block text-sm hover:text-[#b66a00]">GALLERY</a>
+          <a href="#" class="block text-sm hover:text-[#b66a00]">PROJECTS</a>
+          <a href="#" class="block text-sm hover:text-[#b66a00]">CONTACT</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative max-w-[1450px] mx-auto h-[90vh] w-full overflow-hidden bg-[#fdfaf5] py-4"
+    >
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute top-0 left-0 w-full h-full object-cover z-0"
+      >
+        <source src="./video2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center">
+        <div class="text-white px-4 md:px-12 max-w-screen-2xl mt-32">
+          <!-- First Line -->
+          <h1
+            class="text-3xl md:text-5xl font-heading font-medium tracking-wide"
+          >
+            WELCOME TO EIVAA HOMES
+          </h1>
+
+          <!-- Second Line -->
+          <h1
+            class="text-2xl md:text-5xl font-heading font-medium text-yellow-500 mt-2 tracking-wide"
+          >
+            Crafting Dreams, Building Trust
+          </h1>
+
+          <!-- Paragraph -->
+          <p class="text-lg md:text-xl my-4 w-[90%] max-w-2xl font-paragraph">
+            At Eivaa Homess, we don’t just build houses—we create homes that
+            reflect comfort, quality, and a lasting promise of value. Based in
+            Coimbatore, we specialize in thoughtfully designed residential
+            communities that bring your vision of modern living to life.
+          </p>
+
+          <!-- Button -->
+          <a
+            href="#"
+            class="border border-white text-white px-5 py-2 inline-block hover:bg-white hover:text-black transition"
+          >
+            ENQUIRE NOW
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 px-0">
+      <div class="flex flex-col md:flex-row gap-10 items-center">
+        <div class="w-full md:w-1/2 lg:w-1/3">
+          <img src="./images/aboutimage.png" alt="About Us" class="w-full" />
+        </div>
+        <div class="w-full md:w-1/2">
+          <h2 class="text-6xl font-bold mb-4 font-heading">
+            <span class="text-yellow-700">ABOUT</span> US
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+              <a
+                href="#"
+                class="mt-4 inline-block text-yellow-700 border border-yellow-700 px-4 py-2 text-sm uppercase hover:bg-yellow-700 hover:text-white transition"
+                >KNOW MORE</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="bg-[#fefaf5] py-10">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 text-center gap-8"
+      >
+        <div>
+          <h2 class="text-4xl font-bold text-gray-800 counter" data-target="15">
+            0
+          </h2>
+          <p class="text-lg mt-2">Years of experience</p>
+        </div>
+        <div
+          class="border-t md:border-t-0 md:border-l border-gray-300 pt-6 md:pt-0"
+        >
+          <h2
+            class="text-4xl font-bold text-gray-800 counter"
+            data-target="250"
+          >
+            0
+          </h2>
+          <p class="text-lg mt-2">Projects completed</p>
+        </div>
+        <div
+          class="border-t md:border-t-0 md:border-l border-gray-300 pt-6 md:pt-0"
+        >
+          <h2
+            class="text-4xl font-bold text-gray-800 counter"
+            data-target="120"
+          >
+            0
+          </h2>
+          <p class="text-lg mt-2">Happy customers</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-900 text-white py-10">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl uppercase">Projects</h2>
+          <a
+            href="#"
+            class="border border-white px-4 py-2 hover:bg-white hover:text-black transition"
+            >View All</a
+          >
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 items-start">
+          <!-- Left -->
+          <div>
+            <h3 class="text-xl uppercase mb-2">Anthara</h3>
+            <p class="mb-4 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <a
+              href="#"
+              class="border border-white px-4 py-2 hover:bg-white hover:text-black transition"
+              >ENQUIRE NOW</a
+            >
+          </div>
+          <!-- Center Image -->
+          <div class="flex justify-center">
+            <img
+              src="./images/projectimage.png"
+              class="rounded-lg w-full max-w-sm"
+              alt="Project"
+            />
+          </div>
+          <!-- Right Info -->
+          <div>
+            <div class="mb-4">
+              <h5 class="font-semibold">Square Feet</h5>
+              <p class="text-gray-300 text-sm">6*7 Sq feet</p>
+            </div>
+            <div class="mb-4">
+              <h5 class="font-semibold">No. of Rooms</h5>
+              <p class="text-gray-300 text-sm">03 Rooms</p>
+            </div>
+            <div class="mb-4">
+              <h5 class="font-semibold">Price Range</h5>
+              <p class="text-gray-300 text-sm">1 - 3 Crores</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-end gap-4 mt-6">
+          <button class="border border-white px-4 py-2">&larr;</button>
+          <button class="border border-white px-4 py-2">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#fdfaf5] py-16 px-6 text-gray-800 font-serif">
+      <div
+        class="flex flex-col lg:flex-row items-center justify-between gap-10"
+      >
+        <!-- Left Image -->
+        <div class="w-full lg:w-1/2 text-center">
+          <img
+            src="./images/new.gif"
+            alt="Home Animation"
+            class="w-full object-cover"
+          />
+        </div>
+        <!-- Right Content -->
+        <div class="w-full lg:w-1/2 space-y-6">
+          <h2 class="text-3xl font-semibold">
+            Tailor Your Dream Home <br /><span class="text-yellow-700"
+              >with EIVAA HOMESS</span
+            >
+          </h2>
+          <p class="text-gray-600">
+            Your Vision, Our Expertise — Experience Bespoke Infrastructure Like
+            Never Before.
+          </p>
+          <a
+            href="#"
+            class="border border-yellow-700 text-yellow-700 px-5 py-2 inline-block hover:bg-yellow-700 hover:text-white transition text-sm"
+            >START CUSTOMIZING YOUR HOME TODAY</a
+          >
+        </div>
+      </div>
+      <!-- Bottom Features -->
+      <div
+        class="flex flex-wrap justify-around items-center mt-12 border-t border-gray-300 pt-8 text-center text-sm gap-4"
+      >
+        <div>Personalized Design Consultations</div>
+        <div>Flexible Architectural Adjustments</div>
+        <div>Expert Guidance Throughout</div>
+      </div>
+    </section>
+
+    <section class="bg-[#071e2e] text-white py-12 px-6 overflow-hidden">
+      <div class="flex flex-wrap justify-between items-center mb-6">
+        <h2 class="text-2xl font-semibold leading-tight">
+          FEEL THE <span class="text-yellow-600">LUXURY</span><br />FROM OUR
+          GALLERY
+        </h2>
+        <a
+          href="#"
+          class="border border-white px-4 py-2 hover:bg-white hover:text-[#071e2e] transition"
+          >VIEW ALL</a
+        >
+      </div>
+      <div class="overflow-x-hidden relative">
+        <div
+          class="flex gap-5 animate-[scrollGallery_15s_linear_infinite] w-max"
+        >
+          <img class="w-72 object-cover" src="./images/image2.jpeg" />
+          <img class="w-72 object-cover" src="./images/image2.jpeg" />
+          <img class="w-72 object-cover" src="./images/image3.jpeg" />
+          <img class="w-72 object-cover" src="./images/image4.jpeg" />
+          <!-- Repeat for seamless loop -->
+          <img class="w-72 object-cover" src="./images/image5.jpeg" />
+          <img class="w-72 object-cover" src="./images/image6.jpeg" />
+        </div>
+      </div>
+    </section>
+
+    <style>
+      @keyframes scrollGallery {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+
+    <section class="flex flex-col lg:flex-row w-full min-h-screen">
+      <div class="w-full lg:w-1/2">
+        <img
+          src="./images/contactusimage.png"
+          class="w-full h-[90%] object-cover"
+        />
+      </div>
+      <div class="w-full lg:w-1/2 bg-white p-10 flex flex-col justify-center">
+        <h2 class="text-3xl font-semibold mb-2">Contact Us</h2>
+        <p class="text-gray-600 mb-6">
+          Get in touch with us for any queries and suggestions
+        </p>
+        <div class="flex flex-col md:flex-row gap-10 mb-6">
+          <div>
+            <h4 class="font-semibold text-lg mb-1">General queries</h4>
+            <p>+91 12345 67890<br />Evaahomess@gmail.com</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg mb-1">Careers</h4>
+            <p>Evaahomess@gmail.com</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-start gap-4">
+          <iframe
+            class="w-full md:w-48 h-28 border-none"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.469175989888!2d76.98089431533403!3d11.018982892142469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857e2a9eb9ed5%3A0x30596d1e20db5b85!2sCoimbatore%2C%20Tamil%20Nadu%20641048!5e0!3m2!1sen!2sin!4v1610000000000!5m2!1sen!2sin"
+            loading="lazy"
+          ></iframe>
+          <p class="text-sm text-gray-700 leading-6\">
+            1166/2A1, EVAHA HOMESS,<br />
+            Kurumbapalayam Road, Kalapatti,<br />
+            Coimbatore - 641 048
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#061c2b] text-white px-6 md:px-20 pt-12 pb-6">
+      <div class="flex flex-col lg:flex-row justify-between mb-8 gap-8">
+        <div class="max-w-md">
+          <img src="./images/eivaaiconwhite.png" class="mb-4 w-32" />
+          <nav class="flex flex-wrap gap-4 text-sm">
+            <a href="#" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">About us</a>
+            <a href="#" class="hover:underline">Projects</a>
+            <a href="#" class="hover:underline">Contact us</a>
+          </nav>
+        </div>
+        <div class="max-w-md">
+          <p class="text-gray-300 mb-3">
+            Subscribe to stay tuned for new web design and latest updates. Let's
+            do it!
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="px-4 py-2 rounded text-black w-full sm:w-auto"
+            />
+            <button class="bg-white text-black px-4 py-2 rounded">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between text-sm"
+      >
+        <div class="flex gap-4 mb-2 md:mb-0">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Legal</a>
+        </div>
+        <div class="flex gap-3 text-lg">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fas fa-paper-plane"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+      <p class="text-xs text-gray-500 mt-4">© 2021 All Rights Reserved</p>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
