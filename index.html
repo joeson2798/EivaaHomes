@@ -117,23 +117,27 @@
         Your browser does not support the video tag.
       </video>
       <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center">
-        <div class="text-white px-4 md:px-12 max-w-screen-2xl mt-72">
+        <div
+          class="text-white px-4 md:px-12 max-w-screen-2xl mt-20 md:mt-72 md:mb-8"
+        >
           <!-- First Line -->
           <h1
-            class="text-3xl md:text-5xl font-heading font-medium tracking-wide"
+            class="text-3xl md:text-4xl font-heading font-medium tracking-wide"
           >
             WELCOME TO EIVAA HOMES
           </h1>
 
           <!-- Second Line -->
           <h1
-            class="text-2xl md:text-5xl font-heading font-medium text-yellow-500 mt-2 tracking-wide"
+            class="text-2xl md:text-4xl font-heading font-medium text-[#B46C06] mt-2 md:mt-1 tracking-wide"
           >
             Crafting Dreams, Building Trust
           </h1>
 
           <!-- Paragraph -->
-          <p class="text-lg md:text-xl my-4 w-[90%] max-w-2xl font-paragraph">
+          <p
+            class="md:text-lg my-4 w-[90%] max-w-2xl font-paragraph text-justify"
+          >
             At Eivaa Homess, we don’t just build houses—we create homes that
             reflect comfort, quality, and a lasting promise of value. Based in
             Coimbatore, we specialize in thoughtfully designed residential
@@ -143,7 +147,7 @@
           <!-- Button -->
           <a
             href="#"
-            class="border border-white text-white px-5 py-2 inline-block hover:bg-white hover:text-black transition"
+            class="border border-white text-white text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition"
           >
             ENQUIRE NOW
           </a>
@@ -167,18 +171,21 @@
         </div>
 
         <!-- Text Content -->
+        <!-- Text Content -->
         <div class="w-full md:w-1/2 text-center md:text-left">
           <h2 class="text-2xl md:text-5xl font-medium mb-4 font-heading">
             <span class="text-yellow-700">ABOUT</span> US
           </h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 font-paragraph">
+          <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-6 font-paragraph">
+            <!-- First Paragraph -->
             <p class="text-justify">
               EIVAA HOMESS INDIA LLP is a Limited Liability Partnership firm,
               committed to redefining modern living through excellence,
               transparency, and trust.
             </p>
 
+            <!-- Second Paragraph with Button -->
             <div>
               <p class="text-justify">
                 Our core philosophy revolves around building not just homes, but
@@ -242,28 +249,51 @@
     <!-- Project Section starts-->
     <section class="bg-[#0A202E] text-white py-10 projects-section">
       <div class="max-w-7xl mx-auto px-4">
-        <div class="flex justify-between items-center mb-6">
-          <h2 class="text-2xl uppercase font-heading">Projects</h2>
+        <!-- Top Row: Only visible on md and up -->
+        <div class="hidden md:flex justify-between items-center mb-6">
+          <h2 class="text-2xl md:text-3xl uppercase font-heading">Projects</h2>
           <a
             href="#"
             class="border border-white px-4 py-2 hover:bg-white hover:text-black transition"
-            >View All</a
+            >VIEW ALL</a
           >
         </div>
+
+        <!-- Mobile Header: Only visible below md -->
+        <div class="flex md:hidden justify-between items-center mb-4">
+          <h2 class="text-2xl uppercase font-heading">Projects</h2>
+        </div>
+
+        <!-- Project Content Grid -->
         <div
           class="grid md:grid-cols-3 gap-8 items-center font-paragraph"
           id="project-content"
         ></div>
-        <div class="flex justify-end gap-4 mt-6">
-          <button onclick="prevProject()" class="px-4 py-2">
-            <img src="./images/leftarrow.png" alt="left-arrow" />
-          </button>
-          <button onclick="nextProject()" class="px-4 py-2">
-            <img src="./images/rightarrow.png" alt="right-arrow" />
-          </button>
+
+        <!-- Bottom Controls for Small Screens -->
+        <!-- Bottom Controls for All Screens -->
+        <div class="flex justify-between md:justify-end items-center mt-6">
+          <!-- Arrows: left side -->
+          <div class="flex gap-4">
+            <button onclick="prevProject()" class="px-4 py-2">
+              <img src="./images/leftarrow.png" alt="left-arrow" />
+            </button>
+            <button onclick="nextProject()" class="px-4 py-2">
+              <img src="./images/rightarrow.png" alt="right-arrow" />
+            </button>
+          </div>
+
+          <!-- View All Button: right side -->
+          <a
+            href="#"
+            class="border border-white px-4 py-2 hover:bg-white hover:text-black transition text-sm md:hidden"
+          >
+            VIEW ALL
+          </a>
         </div>
       </div>
     </section>
+
     <!-- Project Section End-->
 
     <!-- Personalize Section starts-->
@@ -279,47 +309,76 @@
             class="w-full object-cover"
           />
         </div>
+
         <!-- Right Content -->
         <div class="w-full lg:w-1/2 space-y-6">
-          <h2 class="text-3xl font-medium font-heading">
-            Tailor Your Dream Home <br /><span class="text-yellow-700"
-              >with EIVAA HOMESS</span
-            >
+          <h2 class="text-xl md:text-3xl font-medium font-heading">
+            Tailor Your Dream Home <br />
+            <span class="text-yellow-700">with EIVAA HOMESS</span>
           </h2>
           <p class="text-gray-600 max-w-[470px]">
             Your Vision, Our Expertise — Experience Bespoke Infrastructure Like
             Never Before.
           </p>
+
+          <!-- Button (only visible on large screens) -->
           <a
             href="#"
-            class="border border-yellow-700 text-yellow-700 px-5 py-2 inline-block hover:bg-yellow-700 hover:text-white transition text-sm font-paragraph"
-            >START CUSTOMIZING YOUR HOME TODAY</a
+            class="hidden lg:inline-block border border-yellow-700 text-yellow-700 px-5 py-2 hover:bg-yellow-700 hover:text-white transition text-sm font-paragraph"
           >
+            START CUSTOMIZING YOUR HOME TODAY
+          </a>
         </div>
       </div>
+
       <!-- Bottom Features -->
       <div
-        class="flex flex-wrap justify-around items-center mt-2 pt-2 text-center text-lg gap-4 font-paragraph"
+        class="flex flex-wrap justify-around items-center mt-2 pt-6 text-center text-lg gap-4 font-paragraph"
       >
         <div>Personalized Design Consultations</div>
         <div>Flexible Architectural Adjustments</div>
         <div>Expert Guidance Throughout</div>
       </div>
+
+      <!-- Button for small screens only -->
+      <div class="mt-6 text-center lg:hidden">
+        <a
+          href="#"
+          class="border border-yellow-700 text-yellow-700 px-3 py-2 text-center max-w-xs w-full inline-block text-sm font-paragraph hover:bg-yellow-700 hover:text-white transition"
+        >
+          START CUSTOMIZING YOUR HOME TODAY
+        </a>
+      </div>
     </section>
+
     <!-- Personalize Section Ends-->
 
     <!-- Gallery Section Starts-->
-    <section class="bg-[#071e2e] text-white py-12 px-6 overflow-hidden pb-28">
-      <div class="flex flex-wrap justify-between items-center mb-6 p-10">
-        <h2 class="text-4xl font-medium font-heading leading-tight">
+    <section
+      class="bg-[#071e2e] text-white py-12 px-6 overflow-hidden pb-8 md:pb-28"
+    >
+      <!-- Heading Row (only for md and up) -->
+      <div
+        class="hidden md:flex flex-wrap justify-between items-center mb-6 p-10"
+      >
+        <h2 class="text-xl md:text-4xl font-medium font-heading leading-tight">
           FEEL THE <span class="text-yellow-600">LUXURY</span><br />FROM OUR
           GALLERY
         </h2>
         <a
           href="#"
           class="border border-white px-4 py-2 hover:bg-white hover:text-[#071e2e] transition font-paragraph"
-          >VIEW ALL</a
         >
+          VIEW ALL
+        </a>
+      </div>
+
+      <!-- Heading Row for small screens only -->
+      <div class="flex md:hidden flex-col mb-4">
+        <h2 class="text-xl font-medium font-heading leading-tight">
+          FEEL THE <span class="text-yellow-600">LUXURY</span><br />FROM OUR
+          GALLERY
+        </h2>
       </div>
 
       <!-- Scrolling Container -->
@@ -332,13 +391,23 @@
           <img class="w-72 object-cover" src="./images/image5.jpeg" />
           <img class="w-72 object-cover" src="./images/image6.jpeg" />
 
-          <!-- Group 2 (Duplicate for seamless loop) -->
+          <!-- Group 2 -->
           <img class="w-72 object-cover" src="./images/image2.jpeg" />
           <img class="w-72 object-cover" src="./images/image3.jpeg" />
           <img class="w-72 object-cover" src="./images/image4.jpeg" />
           <img class="w-72 object-cover" src="./images/image5.jpeg" />
           <img class="w-72 object-cover" src="./images/image6.jpeg" />
         </div>
+      </div>
+
+      <!-- Bottom "View All" for small screens only -->
+      <div class="md:hidden flex justify-end mt-6 pr-0 md:pr-6">
+        <a
+          href="#"
+          class="border border-white px-4 py-2 hover:bg-white hover:text-black transition text-sm md:hidden font-paragraph"
+        >
+          VIEW ALL
+        </a>
       </div>
     </section>
 
@@ -400,10 +469,12 @@
         class="w-full lg:w-1/2 bg-white p-10 flex flex-col justify-center font-paragraph"
       >
         <h2 class="text-3xl font-medium font-heading mb-2">Contact Us</h2>
-        <p class="text-gray-600 mb-6">
+        <p class="text-gray-600 mb-2 md:mb-6">
           Get in touch with us for any queries and suggestions
         </p>
-        <div class="flex flex-col md:flex-row gap-10 mb-6 mt-12">
+        <div
+          class="flex flex-col md:flex-row gap-3 md:gap-10 mb-6 mt-2 md:mt-12"
+        >
           <div>
             <h4 class="font-semibold text-lg mb-1 text-gray-500">
               General queries
@@ -435,7 +506,7 @@
       <div class="flex flex-col lg:flex-row justify-between mb-8 gap-8 mt-6">
         <div class="max-w-md mb-8">
           <img src="./images/eivaaiconwhite.png" class="mb-4 w-32" />
-          <nav class="flex flex-wrap gap-4 text-sm">
+          <nav class="flex flex-wrap md:gap-4 text-sm">
             <a href="#" class="hover:underline mr-6">Home</a>
             <a href="#" class="hover:underline mr-6">About us</a>
             <a href="#" class="hover:underline mr-6">Projects</a>
@@ -478,10 +549,26 @@
           <i class="fab fa-instagram"></i>
           <i class="fab fa-pinterest"></i>
           <i class="fab fa-linkedin-in"></i> -->
-          <img src="./images/socialmedia/facebook.png" alt="facebook" />
-          <img src="./images/socialmedia/instagram.png" alt="instagram" />
-          <img src="./images/socialmedia/linkedin.png" alt="linkedin" />
-          <img src="./images/socialmedia/twitter.png" alt="twitter" />
+          <img
+            src="./images/socialmedia/facebook-boxed.svg"
+            alt="facebook"
+            class="w-4 h-4"
+          />
+          <img
+            src="./images/socialmedia/instagram.svg"
+            class="w-4 h-4"
+            alt="instagram"
+          />
+          <img
+            src="./images/socialmedia/linkedin.svg"
+            class="w-4 h-4"
+            alt="linkedin"
+          />
+          <img
+            src="./images/socialmedia/twitter.svg"
+            class="w-4 h-4"
+            alt="twitter"
+          />
         </div>
       </div>
     </footer>
@@ -550,9 +637,9 @@
         container.innerHTML = `
         <!-- Left Text -->
         <div>
-          <h3 class="text-2xl uppercase mb-5 font-medium font-heading">${project.title}</h3>
-          <p class="mb-5 pb-8 text-sm font-medium font-paragraph max-w-[300px] text-justify">${project.description}</p>
-          <a href="#" class="border border-white px-4 py-2 hover:bg-white hover:text-black transition">ENQUIRE NOW</a>
+          <h3 class="text-2xl uppercase mb-2 md:mb-5 font-medium font-heading">${project.title}</h3>
+          <p class="mb-3 md:mb-5 pb-4 md:pb-8 text-sm font-medium font-paragraph max-w-sm text-justify">${project.description}</p>
+          <a href="#" class="border border-white text-white text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition">ENQUIRE NOW</a>
         </div>
 
         <!-- Center Image -->
