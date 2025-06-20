@@ -86,48 +86,39 @@
     </header>
 
     <!-- Hero Section Starts-->
-    <section
-      class="relative max-w-[1450px] mx-auto h-[90vh] w-full overflow-hidden bg-[#fdfaf5] py-4"
-    >
+    <section class="relative h-[90vh] w-full overflow-hidden">
+      <!-- Video Background -->
       <video
         autoplay
         muted
         loop
         playsinline
-        class="absolute top-0 left-0 w-full h-full object-cover z-1"
+        class="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
         <source src="./video2.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
-      <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center">
-        <div
-          class="text-white px-4 md:px-12 max-w-screen-2xl mt-20 md:mt-72 md:mb-8"
-        >
-          <!-- First Line -->
+
+      <!-- Overlay Content with Background -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 z-10 flex items-center"
+      >
+        <div class="text-white px-4 md:px-12 max-w-screen-2xl mt-20 md:mt-72">
           <h1
             class="text-3xl md:text-4xl font-heading font-medium tracking-wide"
           >
             WELCOME TO EIVAA HOMES
           </h1>
-
-          <!-- Second Line -->
           <h1
             class="text-2xl md:text-4xl font-heading font-medium text-[#B46C06] mt-2 md:mt-1 tracking-wide"
           >
             Crafting Dreams, Building Trust
           </h1>
-
-          <!-- Paragraph -->
           <p
             class="md:text-lg my-4 w-[90%] max-w-2xl font-paragraph text-justify"
           >
             At Eivaa Homess, we don’t just build houses—we create homes that
-            reflect comfort, quality, and a lasting promise of value. Based in
-            Coimbatore, we specialize in thoughtfully designed residential
-            communities that bring your vision of modern living to life.
+            reflect comfort, quality, and a lasting promise of value...
           </p>
-
-          <!-- Button -->
           <a
             href="#"
             class="border border-white text-white text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition"
@@ -137,6 +128,7 @@
         </div>
       </div>
     </section>
+
     <!-- Hero Section End-->
 
     <!-- About Section Starts-->
