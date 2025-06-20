@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+
+@import "tailwindcss";
+
+/* Your local font-face rules */
+@font-face {
+  font-family: 'Inria Sans';
+  src: url('./fonts/Inria_Sans/InriaSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inria Serif';
+  src: url('./fonts/Inria_Serif/InriaSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+/* ✅ Manually define Tailwind classes using your fonts */
+@layer utilities {
+  .font-paragraph {
+    @apply font-['Inria_Sans'];
+    font-family: 'Inria Sans', sans-serif;
+  }
+
+  .font-heading {
+    @apply font-['Inria_Serif'];
+    font-family: 'Inria Serif', serif;
+  }
+}
