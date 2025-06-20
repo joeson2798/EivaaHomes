@@ -30,13 +30,16 @@
       href="https://fonts.googleapis.com/css2?family=Inria+Sans&family=Inria+Serif&display=swap"
       rel="stylesheet"
     /> -->
-    <script src="./tailwindbrowser.js"></script>
+    <script src="./js/tailwindbrowser.js"></script>
+
+    <script src="./js/scroll.js"></script>
+
     <link
       href="./assets/fontawesome-free-6.7.2-web/css/all.min.css"
       rel="stylesheet"
     />
   </head>
-  <body class="font-sans bg-[#fdfaf5]">
+  <body class="font-sans bg-[#fdfaf5] scroll-smooth">
     <!-- Header -->
     <header
       class="sticky top-0 z-50 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-sm"
@@ -95,7 +98,7 @@
         playsinline
         class="absolute inset-0 w-full h-full object-cover z-0"
       >
-        <source src="./video2.mp4" type="video/mp4" />
+        <source src="./images/video2.mp4" type="video/mp4" />
       </video>
 
       <!-- Black Overlay -->
@@ -594,6 +597,17 @@
       menuBtn.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
       });
+    </script>
+
+    <script>
+      const lenis = new Lenis();
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
     </script>
 
     <script>
