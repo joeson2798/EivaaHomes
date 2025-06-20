@@ -87,22 +87,25 @@
 
     <!-- Hero Section Starts-->
     <section class="relative h-[90vh] w-full overflow-hidden">
-      <!-- Video Background -->
+      <!-- Fullscreen Background Video -->
       <video
         autoplay
         muted
         loop
         playsinline
-        class="absolute top-0 left-0 w-full h-full object-cover z-0"
+        class="absolute inset-0 w-full h-full object-cover z-0"
       >
         <source src="./video2.mp4" type="video/mp4" />
       </video>
 
-      <!-- Overlay Content with Background -->
+      <!-- Black Overlay -->
       <div
         class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 z-10 flex items-center"
       >
-        <div class="text-white px-4 md:px-12 max-w-screen-2xl mt-20 md:mt-72">
+        <!-- ✅ Limit max-width of TEXT only -->
+        <div
+          class="text-white px-4 md:px-12 max-w-screen-xl w-full mx-auto mt-20 md:mt-72"
+        >
           <h1
             class="text-3xl md:text-4xl font-heading font-medium tracking-wide"
           >
@@ -114,10 +117,10 @@
             Crafting Dreams, Building Trust
           </h1>
           <p
-            class="md:text-lg my-4 w-[90%] max-w-2xl font-paragraph text-justify"
+            class="md:text-lg my-4 w-[90%] max-w-xl font-paragraph text-justify"
           >
             At Eivaa Homess, we don’t just build houses—we create homes that
-            reflect comfort, quality, and a lasting promise of value...
+            reflect comfort, quality, and a lasting promise of value.
           </p>
           <a
             href="#"
