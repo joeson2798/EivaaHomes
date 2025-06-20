@@ -30,6 +30,10 @@
       href="https://fonts.googleapis.com/css2?family=Inria+Sans&family=Inria+Serif&display=swap"
       rel="stylesheet"
     /> -->
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <script src="./js/tailwindbrowser.js"></script>
 
     <script src="./js/scroll.js"></script>
@@ -110,17 +114,17 @@
           class="text-white px-4 md:px-12 max-w-screen-xl w-full mx-auto mt-20 md:mt-72"
         >
           <h1
-            class="text-3xl md:text-4xl font-heading font-medium tracking-wide"
+            class="text-3xl md:text-4xl font-heading font-medium tracking-wide opacity-0 animate-fade-in delay-1200"
           >
             WELCOME TO EIVAA HOMES
           </h1>
           <h1
-            class="text-2xl md:text-4xl font-heading font-medium text-[#B46C06] mt-2 md:mt-1 tracking-wide"
+            class="text-2xl md:text-4xl font-heading font-medium text-[#B46C06] mt-2 md:mt-1 tracking-wide opacity-0 animate-fade-in delay-800"
           >
             Crafting Dreams, Building Trust
           </h1>
           <p
-            class="md:text-lg my-4 w-[90%] max-w-xl font-paragraph text-justify"
+            class="md:text-lg my-4 sm:w-[90%] max-w-xl font-paragraph text-justify opacity-0 animate-fade-in delay-400"
           >
             At Eivaa Homess, we don’t just build houses—we create homes that
             reflect comfort, quality, and a lasting promise of value.
@@ -148,19 +152,23 @@
             src="./images/aboutimage.png"
             alt="About Us"
             class="w-full max-w-xs md:max-w-full"
+            data-aos="fade-right"
           />
         </div>
 
         <!-- Text Content -->
         <!-- Text Content -->
-        <div class="w-full md:w-1/2 text-center md:text-left">
+        <div
+          class="w-full md:w-1/2 text-center md:text-left"
+          data-aos="fade-left"
+        >
           <h2 class="text-2xl md:text-5xl font-medium mb-4 font-heading">
             <span class="text-yellow-700">ABOUT</span> US
           </h2>
 
           <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-6 font-paragraph">
             <!-- First Paragraph -->
-            <p class="text-justify">
+            <p class="text-justify px-[10px] md:px-[0px] md:text-justify">
               EIVAA HOMESS INDIA LLP is a Limited Liability Partnership firm,
               committed to redefining modern living through excellence,
               transparency, and trust.
@@ -168,7 +176,7 @@
 
             <!-- Second Paragraph with Button -->
             <div>
-              <p class="text-justify">
+              <p class="text-justify px-[10px] md:px-[0px] md:text-justify">
                 Our core philosophy revolves around building not just homes, but
                 long-term relationships with our customers. We believe that true
                 quality is felt in the comfort, safety, and satisfaction our
@@ -256,10 +264,10 @@
         <div class="flex justify-between md:justify-end items-center mt-6">
           <!-- Arrows: left side -->
           <div class="flex gap-4">
-            <button onclick="prevProject()" class="px-4 py-2">
+            <button onclick="prevProject()" class="px-4 py-2 cursor-pointer">
               <img src="./images/leftarrow.png" alt="left-arrow" />
             </button>
-            <button onclick="nextProject()" class="px-4 py-2">
+            <button onclick="nextProject()" class="px-4 py-2 cursor-pointer">
               <img src="./images/rightarrow.png" alt="right-arrow" />
             </button>
           </div>
@@ -627,10 +635,12 @@
         const project = projects[index];
         const container = document.getElementById("project-content");
         container.innerHTML = `
-        <!-- Left Text -->
-        <div>
+         <!-- Left Text -->
+        <div class="md:pt-[230px]">
           <h3 class="text-2xl uppercase mb-2 md:mb-5 font-medium font-heading">${project.title}</h3>
-          <p class="mb-3 md:mb-5 pb-4 md:pb-8 text-sm font-medium font-paragraph max-w-sm text-justify">${project.description}</p>
+          <div class="mb-3 md:mb-5 pb-4 md:pb-8 h-[85px]">
+          <p class="text-sm font-medium font-paragraph max-w-sm text-justify">${project.description}</p>
+          </div>
           <a href="#" class="border border-white text-white text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition">ENQUIRE NOW</a>
         </div>
 
@@ -666,6 +676,14 @@
         currentIndex = (currentIndex - 1 + projects.length) % projects.length;
         showProject(currentIndex);
       }
+    </script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true, // whether animation should happen only once - while scrolling down
+      });
     </script>
   </body>
 </html>
