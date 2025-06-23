@@ -50,6 +50,89 @@
   .delay-1200 { animation-delay: 1.2s; }
 
 
+
+
+    @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-up {
+    animation: fade-in-up 0.8s ease-out both;
+  }
+
+
+   /* From Left */
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .fade-in-left {
+    animation: fade-in-left 0.8s ease-out both;
+  }
+
+  /* From Right */
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .fade-in-right {
+    animation: fade-in-right 0.8s ease-out both;
+  }
+
+  /* From Bottom (already exists but updated for consistency) */
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  @keyframes reveal-up {
+    0% {
+      clip-path: inset(100% 0 0 0);
+      opacity: 0;
+    }
+    100% {
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+    }
+  }
+
+  .animate-reveal-up {
+    animation: reveal-up 2.2s ease-out forwards;
+  }
+
+  .delay-1600 {
+    animation-delay: 1.6s;
+  }
+
+
 }
 
 

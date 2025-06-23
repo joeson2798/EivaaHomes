@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eivaa Homes</title>
+
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon.png"
+      sizes="180x180"
+    />
+
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans&family=Inria+Serif&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- AOS CSS -->
+    <link href="./js/aos.css" rel="stylesheet" />
+
+    <script src="./js/tailwindbrowser.js"></script>
+
+    <script src="./js/scroll.js"></script>
+
+    <link
+      href="./assets/fontawesome-free-6.7.2-web/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-sans bg-[#fdfaf5] scroll-smooth">
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-sm"
+    >
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <a href="#" class="flex items-center space-x-2">
+            <img src="./images/eivaa icon.png" alt="Logo" class="h-10" />
+            <span class="font-semibold tracking-wide hidden">HOMESS</span>
+          </a>
+
+          <!-- Desktop Menu -->
+          <nav
+            class="hidden md:flex items-center text-sm font-medium font-paragraph"
+          >
+            <a href="./index.html" class="hover:text-[#b66a00] px-6">HOME</a>
+            <a href="" class="text-[#b66a00] px-6">ABOUT US</a>
+            <a href="#" class="hover:text-[#b66a00] px-6">GALLERY</a>
+            <a href="#" class="hover:text-[#b66a00] px-6">PROJECTS</a>
+            <a href="#" class="hover:text-[#b66a00] px-6">CONTACT</a>
+          </nav>
+
+          <!-- Hamburger -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              class="text-gray-800 focus:outline-none text-2xl"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden flex-col space-y-3 pb-4 items-end text-right"
+        >
+          <a href="#" class="block text-sm text-[#b66a00]">HOME</a>
+          <a href="#" class="block text-sm hover:text-[#b66a00]">ABOUT US</a>
+          <a href="#" class="block text-sm hover:text-[#b66a00]">GALLERY</a>
+          <a href="#" class="block text-sm hover:text-[#b66a00]">PROJECTS</a>
+          <a href="#" class="block text-sm hover:text-[#b66a00]">CONTACT</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section Starts-->
+    <section class="relative h-[90vh] w-full overflow-hidden">
+      <!-- Fullscreen Background Video -->
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source src="./images/video2.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Black Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 z-10 flex items-center"
+      >
+        <!-- ✅ Limit max-width of TEXT only -->
+        <div
+          class="text-white px-4 md:px-12 max-w-screen-xl w-full mx-auto mt-20 md:mt-72"
+        >
+          <h1
+            class="text-3xl md:text-4xl font-heading font-medium tracking-wide opacity-0 animate-fade-in delay-1200"
+          >
+            WELCOME TO EIVAA HOMES
+          </h1>
+          <h1
+            class="text-2xl md:text-4xl font-heading font-medium text-[#B46C06] mt-2 md:mt-1 tracking-wide opacity-0 animate-fade-in delay-800"
+          >
+            Crafting Dreams, Building Trust
+          </h1>
+          <p
+            class="md:text-lg my-4 sm:w-[90%] max-w-xl font-paragraph text-justify opacity-0 animate-fade-in delay-400"
+          >
+            At Eivaa Homess, we don’t just build houses—we create homes that
+            reflect comfort, quality, and a lasting promise of value.
+          </p>
+          <a
+            href="#"
+            class="border border-white text-white text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition"
+          >
+            ENQUIRE NOW
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section End-->
+    <!--About Us starts-->
+
+    <!--Tailor your Dream-->
+    <div
+      class="mt-[70px] md:mt-[130px] mb-[40px] md:mb-[200px] flex md:flex-row sm:flex-col sm:items-center flex-col items-center"
+    >
+      <div
+        class="md:w-[600px] sm:w-[80%] w-[80%] xl:ml-[100px] lg:ml-[100px] md:ml-[50px] flex items-center relative"
+        data-aos="fade-right"
+        data-aos-duration="700"
+      >
+        <video
+          class="md:w-[100%] sm:w-[100%] w-[100%] h-[300px] lg:h-[650px] md:h-[680px] object-cover"
+          src="./images/aboutus/3773486-hd_1920_1080_30fps.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+        ></video>
+        <button
+          class="absolute sm:bottom-0 bottom-0 md:bottom-0 lg:bottom-0 border border-white bg-white flex items-center"
+        >
+          <img
+            src="./images/aboutus/—Pngtree—play video icon graphic design_3990515.png"
+            class="w-[30px]"
+          />WATCH VIDEO
+        </button>
+      </div>
+
+      <div
+        class="md:w-[600px] lg:w-[60%] sm:w-[80%] w-[80%] lg:mt-[60px] md:mt-[50px] sm:mt-[50px] mt-[50px] mb-[20px]"
+      >
+        <div
+          class="bg-white border border-white p-10 xl:pr-[100px] xl:mr-[100px] lg:mr-[100px] md:mr-[30px] lg:ml-[-100px] md:ml-[-70px] relative z-10 shadow-xl"
+        >
+          <h3 class="text-sm text-[#7A7A7A]">WELCOME TO EIVAA HOMESS</h3>
+          <h1 class="text-3xl mt-[10px] font-heading">
+            TAILOR YOUR <span class="text-yellow-500">DREAM HOUSE</span>
+          </h1>
+          <h1 class="text-3xl mt-[3px] font-heading">WITH US</h1>
+          <p
+            class="mt-[20px] text-[#7A7A7A] opacity-0 text-justify font-paragraph"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="700"
+          >
+            At EIVAA HOMESS, we understand that every home is a reflection of
+            its owner. Our personalized design solutions are crafted to align
+            with your unique vision and lifestyle. Whether you have a specific
+            layout in mind, desire luxurious finishes, or wish to integrate
+            eco-friendly elements, our expert team will ensure your dream home
+            becomes a reality. Experience bespoke living spaces where comfort,
+            style, and functionality come together effortlessly.
+          </p>
+        </div>
+        <div
+          class="flex sm:flex-row flex-col sm:justify-around xl:mt-[100px] lg:mt-[60px] md:mt-[40px] sm:mt-[40px] mt-[40px] md:w-[80%] md:ml-[20px] lg:ml-[0px]"
+        >
+          <div class="flex flex-col items-center">
+            <h1 class="text-4xl font-heading">08+</h1>
+            <p class="text-[#7A7A7A] mt-[10px] font-paragraph">
+              Years of experience
+            </p>
+          </div>
+          <div class="flex flex-col items-center sm:mt-[0px] mt-[30px]">
+            <h1 class="text-4xl font-heading">50+</h1>
+            <p class="text-[#7A7A7A] mt-[10px] font-paragraph">
+              Projects completed
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--why choose us-->
+    <div
+      class="bg-[#14212b] mb-[50px] pt-[80px] pl-[40px] sm:pl-[120px] md:pl-[70px] lg:pl-[90px] xl:pl-[120px]"
+    >
+      <div class="sm:w-[60%] md:w-[42%] lg:w-[32%] xl:w-[28%]">
+        <h1 class="font-heading text-2xl sm:text-3xl text-white">
+          WHY CHOOSE US?
+        </h1>
+        <p
+          class="font-paragraph text-[#7A7A7A] mt-[20px] w-[80%] sm:w-full text-justify text-sm"
+        >
+          At EIVAA HOMESS we stand by offering a truly personalized and
+          luxurious home-building experience.Here's why our clients choose us
+        </p>
+      </div>
+      <div class="flex flex-col sm:flex-col md:flex-row mt-[40px]">
+        <div
+          class="border-0 border-white bg-[#E9DED1] md:w-[45%] sm:w-[80%] w-[90%] md:h-[200px] mr-[20px] lg:px-[30px] lg:py-[50px] md:px-[10px] md:py-[20px] sm:px-[30px] sm:py-[50px] px-[30px] py-[50px]"
+        >
+          <h1
+            class="font-heading text-2xl"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
+            Tailor-Made Excellence
+          </h1>
+          <p
+            class="text-[#7A7A7A] pt-[10px] font-paragraph text-justify"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
+            Every home we build reflects our client's vision. Our tailor-made
+            infrastructure service ensures your specific design preferences are
+            seamlessly integrated into your dream home.
+          </p>
+        </div>
+        <div
+          class="border-0 border-white bg-[#E9DED1] md:w-[45%] sm:w-[80%] w-[90%] md:h-[200px] lg:px-[30px] lg:py-[50px] md:px-[10px] md:py-[20px] sm:mt-[20px] md:mt-[0px] sm:px-[30px] sm:py-[50px] mt-[20px] px-[30px] py-[50px]"
+        >
+          <h1
+            class="font-heading text-2xl"
+            data-aos="fade-up"
+            data-aos-delay="800"
+            data-aos-duration="800"
+          >
+            Sustainable Solutions
+          </h1>
+          <p
+            class="text-[#7A7A7A] pt-[10px] font-paragraph text-justify"
+            data-aos="fade-up"
+            data-aos-delay="800"
+            data-aos-duration="800"
+          >
+            We incorporate eco-friendly designs and materials, ensuring luxury
+            without compromising on sustainability.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-col md:flex-row mt-[20px] pb-[80px]">
+        <div
+          class="border-0 border-white bg-[#E9DED1] md:w-[45%] sm:w-[80%] w-[90%] md:h-[200px] mr-[20px] lg:px-[30px] lg:py-[50px] md:px-[10px] md:py-[20px] sm:px-[30px] sm:py-[50px] px-[30px] py-[50px]"
+        >
+          <h1
+            class="font-heading text-2xl opacity-0"
+            data-aos="fade-up"
+            data-aos-delay="1300"
+            data-aos-duration="800"
+          >
+            Transparent Process
+          </h1>
+          <p
+            class="text-[#7A7A7A] pt-[10px] font-paragraph text-justify"
+            data-aos="fade-up"
+            data-aos-delay="1300"
+            data-aos-duration="800"
+          >
+            From the initial concept to the final handover, we keep you informed
+            every step of the way. Our clear communication ensures a stress-free
+            experience.
+          </p>
+        </div>
+        <div
+          class="border-0 border-white bg-[#E9DED1] md:w-[45%] sm:w-[80%] w-[90%] md:h-[200px] lg:px-[30px] lg:py-[50px] md:px-[10px] md:py-[20px] sm:mt-[20px] md:mt-[0px] sm:px-[30px] sm:py-[50px] mt-[20px] px-[30px] py-[50px]"
+        >
+          <h1
+            class="font-heading text-2xl"
+            data-aos="fade-up"
+            data-aos-delay="1900"
+            data-aos-duration="800"
+          >
+            Client-Centric Approach
+          </h1>
+          <p
+            class="text-[#7A7A7A] pt-[10px] font-paragraph text-justify"
+            data-aos="fade-up"
+            data-aos-delay="1900"
+            data-aos-duration="800"
+          >
+            Your satisfaction is our ultimate priority. We collaborate closely
+            with you to ensure your home not only meets but exceeds your
+            expectations.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--photo section-->
+    <div
+      class="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row h-auto h-screen mt-[90px]"
+    >
+      <div
+        class="relative w-full h-[25vh] md:w-1/4 md:h-[90%] transition-all duration-500 overflow-hidden group hover:h-[45%] md:hover:h-[90%] md:hover:w-[45%]"
+      >
+        <img
+          src="./images/aboutus/View-14-min.jpeg"
+          class="h-full w-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 pointer-events-none"
+        ></div>
+        <div
+          class="absolute md:bottom-25 md:left-10 sm:bottom-10 sm:left-10 bottom-10 left-10 text-white lg:text-3xl md:text-xl sm:text-xl text-xl translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0"
+        >
+          <h1>Initial Planning</h1>
+          <p
+            class="text-base mt-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-justify pr-[20px]"
+          >
+            Our architects and designers develop creative concepts that balance
+            aesthetics, functionality, and your unique requirements.
+          </p>
+        </div>
+      </div>
+      <div
+        class="relative w-full h-[25vh] md:w-1/4 md:h-[90%] transition-all duration-500 overflow-hidden group hover:h-[45%] md:hover:h-[90%] md:hover:w-[45%]"
+      >
+        <img
+          src="./images/aboutus/View-02-min.jpeg"
+          class="h-full w-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 pointer-events-none"
+        ></div>
+        <div
+          class="absolute md:bottom-25 md:left-10 sm:bottom-10 sm:left-10 bottom-10 left-10 text-white lg:text-3xl md:text-xl sm:text-xl text-xl translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0"
+        >
+          <h1>Concept Design</h1>
+          <p
+            class="text-base mt-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-justify pr-[20px]"
+          >
+            Our architects and designers develop creative concepts that balance
+            aesthetics, functionality, and your unique requirements.
+          </p>
+        </div>
+      </div>
+      <div
+        class="relative w-full h-[25vh] md:w-1/4 md:h-[90%] transition-all duration-500 overflow-hidden group hover:h-[45%] md:hover:h-[90%] md:hover:w-[45%]"
+      >
+        <img
+          src="./images/aboutus/View-06-min.jpeg"
+          class="h-full w-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 pointer-events-none"
+        ></div>
+        <div
+          class="absolute md:bottom-25 md:left-10 sm:bottom-10 sm:left-10 bottom-10 left-10 text-white lg:text-3xl md:text-xl sm:text-xl text-xl translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0"
+        >
+          <h1>Execution and Craftmanship</h1>
+          <p
+            class="text-base mt-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-justify pr-[20px]"
+          >
+            Skilled professionals bring the design to life with meticulous
+            attention to detail and quality craftsmanship.
+          </p>
+        </div>
+      </div>
+      <div
+        class="relative w-full h-[25vh] md:w-1/4 md:h-[90%] transition-all duration-500 overflow-hidden group hover:h-[45%] md:hover:h-[90%] md:hover:w-[45%]"
+      >
+        <img
+          src="./images/aboutus/View-16-min.jpeg"
+          class="h-full w-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 pointer-events-none"
+        ></div>
+        <div
+          class="absolute md:bottom-25 md:left-10 sm:bottom-10 sm:left-10 bottom-10 left-10 text-white lg:text-3xl md:text-xl sm:text-xl text-xl translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0"
+        >
+          <h1>Handover & Beyond</h1>
+          <p
+            class="text-base mt-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-justify pr-[20px]"
+          >
+            We ensure a smooth handover and provide ongoing support, making sure
+            you feel at home from day one.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="md:mt-[-74px]">
+      <div
+        class="bg-[#14212b] md:text-4xl lg:text-5xl sm:text-4xl py-[50px] sm:py-[120px] flex flex-col items-center sm:items-center sm:text-center text-justify px-[10px] sm:px-[0px]"
+      >
+        <h1 class="text-white">
+          <span class="text-yellow-500 font-heading">DIFFERENT</span>
+          BACKROUNDS.
+          <span class="text-yellow-500 font-heading"> ONE</span> VISION.
+        </h1>
+        <h1 class="text-white font-heading">
+          THE FOUNDATION OF
+          <span class="text-yellow-500 font-heading">EIVAA HOMESS.</span>
+        </h1>
+      </div>
+    </div>
+
+    <!--contact section-->
+    <section class="flex flex-col lg:flex-row w-full min-h-screen">
+      <!-- Left: Background Image with Blurred Overlay Form -->
+      <div class="relative w-full lg:w-1/2 h-[500px] lg:h-auto overflow-hidden">
+        <!-- Background as image -->
+        <div
+          class="absolute inset-0 bg-[url('./images/contactusimage.png')] bg-cover bg-center"
+        ></div>
+
+        <!-- Blurred Form Overlay -->
+        <div
+          class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center"
+        >
+          <form class="text-white p-10 w-full max-w-md font-paragraph">
+            <h2 class="text-3xl font-heading font-semibold mb-6">Enquire</h2>
+            <input
+              type="text"
+              placeholder="Name"
+              class="w-full mb-4 px-4 py-2 bg-transparent border border-white placeholder-white text-white outline-none"
+            />
+            <input
+              type="email"
+              placeholder="Email Id"
+              class="w-full mb-4 px-4 py-2 bg-transparent border border-white placeholder-white text-white outline-none"
+            />
+            <textarea
+              placeholder="Your Message"
+              rows="4"
+              class="w-full mb-4 px-4 py-2 bg-transparent border border-white placeholder-white text-white outline-none resize-none"
+            ></textarea>
+            <button
+              type="submit"
+              class="border border-white px-6 py-2 uppercase text-sm bg-white text-black"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="w-full lg:w-1/2 bg-white p-10 flex flex-col justify-center font-paragraph"
+      >
+        <h2 class="text-3xl font-medium font-heading mb-2">Contact Us</h2>
+        <p class="text-gray-600 mb-2 md:mb-6">
+          Get in touch with us for any queries and suggestions
+        </p>
+        <div
+          class="flex flex-col md:flex-row gap-3 md:gap-10 mb-6 mt-2 md:mt-12"
+        >
+          <div>
+            <h4 class="font-semibold text-lg mb-1 text-gray-500">
+              General queries
+            </h4>
+            <p>+91 12345 67890<br />Evaahomess@gmail.com</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg mb-1 text-gray-500">Careers</h4>
+            <p>Evaahomess@gmail.com</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-4">
+          <iframe
+            class="w-full md:w-48 h-28 border-none"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.469175989888!2d76.98089431533403!3d11.018982892142469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857e2a9eb9ed5%3A0x30596d1e20db5b85!2sCoimbatore%2C%20Tamil%20Nadu%20641048!5e0!3m2!1sen!2sin!4v1610000000000!5m2!1sen!2sin"
+            loading="lazy"
+          ></iframe>
+          <p class="text-sm">
+            1166/2A1, EVAHA HOMESS, Kurumbapalayam Road, Kalapatti,<br />
+            Coimbatore - 641 048
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Starts-->
+    <footer class="bg-[#061c2b] text-white px-6 md:px-20 pt-12 pb-6">
+      <div class="flex flex-col lg:flex-row justify-between mb-8 gap-8 mt-6">
+        <div class="max-w-md mb-8">
+          <img src="./images/eivaaiconwhite.png" class="mb-4 w-32" />
+          <nav class="flex flex-wrap md:gap-4 text-sm">
+            <a href="#" class="hover:underline mr-6">Home</a>
+            <a href="#" class="hover:underline mr-6">About us</a>
+            <a href="#" class="hover:underline mr-6">Projects</a>
+            <a href="#" class="hover:underline mr-6">Contact us</a>
+          </nav>
+        </div>
+        <div class="max-w-md">
+          <p class="text-gray-300 mb-3">
+            Subscribe to stay tuned for new web design and latest updates. Let's
+            do it!
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="px-4 py-2 text-black w-full sm:w-auto bg-gray-100"
+            />
+            <button class="bg-white text-black px-4 py-2">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-white pt-4 text-sm flex flex-col md:flex-row justify-between items-center gap-2"
+      >
+        <!-- Policy Links -->
+        <div class="flex gap-4 mb-2 md:mb-0">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Legal</a>
+        </div>
+      </div>
+
+      <!-- Copyright + Social in One Row -->
+      <div class="flex items-center justify-between mt-4 text-xs text-gray-300">
+        <p>© 2021 All Rights Reserved</p>
+        <div class="flex gap-3 text-lg text-white ml-4">
+          <!-- <i class="fab fa-facebook-f"></i>
+          <i class="fas fa-paper-plane"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-linkedin-in"></i> -->
+          <img
+            src="./images/socialmedia/facebook-boxed.svg"
+            alt="facebook"
+            class="w-4 h-4"
+          />
+          <img
+            src="./images/socialmedia/instagram.svg"
+            class="w-4 h-4"
+            alt="instagram"
+          />
+          <img
+            src="./images/socialmedia/linkedin.svg"
+            class="w-4 h-4"
+            alt="linkedin"
+          />
+          <img
+            src="./images/socialmedia/twitter.svg"
+            class="w-4 h-4"
+            alt="twitter"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section Ends-->
+
+    <script>
+      const counters = document.querySelectorAll(".counter");
+      let triggered = false;
+
+      function runCounter() {
+        counters.forEach((counter) => {
+          const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            const count = +counter.innerText;
+            const speed = 100;
+            const increment = Math.ceil(target / speed);
+
+            if (count < target) {
+              counter.innerText = count + increment;
+              setTimeout(updateCount, 30);
+            } else {
+              counter.innerText = target;
+            }
+          };
+          updateCount();
+        });
+      }
+
+      window.addEventListener("scroll", () => {
+        const sectionTop = document.querySelector(".counter-section").offsetTop;
+        const scrollTop = window.scrollY + window.innerHeight;
+
+        if (!triggered && scrollTop > sectionTop) {
+          runCounter();
+          triggered = true;
+        }
+      });
+    </script>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <script>
+      const lenis = new Lenis();
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
+
+    <script>
+      // Projects Section
+      let currentIndex = 0;
+      let projects = [];
+
+      // Load external JSON file
+      fetch("projects.json")
+        .then((response) => response.json())
+        .then((data) => {
+          projects = data;
+          showProject(currentIndex);
+        });
+
+      function showProject(index) {
+        const project = projects[index];
+        const container = document.getElementById("project-content");
+        container.innerHTML = `
+         <!-- Left Text -->
+        <div class="md:pt-[230px]">
+          <h3 class="text-2xl uppercase mb-2 md:mb-5 font-medium font-heading">${project.title}</h3>
+          <div class="mb-3 md:mb-5 pb-4 md:pb-8 h-[85px]">
+          <p class="text-sm font-medium font-paragraph max-w-sm text-justify">${project.description}</p>
+          </div>
+          <a href="#" class="border border-white text-white text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition">ENQUIRE NOW</a>
+        </div>
+
+        <!-- Center Image -->
+        <div class="flex justify-center">
+          <img src="${project.image}"  class="w-full max-w-sm shadow-sm" alt="${project.title}" style="height: 400px;"/>
+        </div>
+
+         <!-- Right Info -->
+          <div>
+            <div class="mb-4">
+              <h5 class="text-2xl font-medium font-heading">Square Feet</h5>
+              <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph">${project.squareFeet}</p>
+            </div>
+            <div class="mb-4">
+              <h5 class="text-2xl font-medium font-heading">No. of Rooms</h5>
+              <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph">${project.rooms}</p>
+            </div>
+            <div class="mb-4">
+              <h5 class="text-2xl font-medium font-heading">Price Range</h5>
+              <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph">${project.price}</p>
+            </div>
+          </div>
+      `;
+      }
+
+      function nextProject() {
+        currentIndex = (currentIndex + 1) % projects.length;
+        showProject(currentIndex);
+      }
+
+      function prevProject() {
+        currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+        showProject(currentIndex);
+      }
+    </script>
+    <!-- AOS JS -->
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
+  </body>
+</html>

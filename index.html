@@ -61,7 +61,7 @@
             class="hidden md:flex items-center text-sm font-medium font-paragraph"
           >
             <a href="#" class="text-[#b66a00] px-6">HOME</a>
-            <a href="./Aboutus/index.html" class="hover:text-[#b66a00] px-6"
+            <a href="./aboutus.html" class="hover:text-[#b66a00] px-6"
               >ABOUT US</a
             >
             <a href="#" class="hover:text-[#b66a00] px-6">GALLERY</a>
@@ -289,15 +289,14 @@
 
     <!-- Personalize Section starts-->
     <section class="bg-[#fdfaf5] py-16 px-6 text-gray-800 font-serif">
-      <div
-        class="flex flex-col lg:flex-row items-center justify-between gap-10"
-      >
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-5">
         <!-- Left Image -->
-        <div class="w-full lg:w-1/2 text-center">
-          <video autoplay muted playsinline class="w-full object-cover">
-            <source src="./images/design.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div class="w-full lg:w-1/2 text-center flex justify-center">
+          <img
+            src="./images/lineart.png"
+            alt="Personalize Design"
+            class="w-full object-cover h-[220px] md:h-[420px] max-w-[550px] opacity-0 reveal-on-scroll"
+          />
         </div>
 
         <!-- Right Content -->
@@ -375,18 +374,48 @@
       <div class="relative overflow-hidden">
         <div class="scroll-track flex gap-5 w-max">
           <!-- Group 1 -->
-          <img class="w-72 object-cover" src="./images/image2.jpeg" />
-          <img class="w-72 object-cover" src="./images/image3.jpeg" />
-          <img class="w-72 object-cover" src="./images/image4.jpeg" />
-          <img class="w-72 object-cover" src="./images/image5.jpeg" />
-          <img class="w-72 object-cover" src="./images/image6.jpeg" />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/aboutusimage.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/aboutus/View-02-min.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/aboutus/View-06-min.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/aboutus/View-14-min.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/aboutus/View-16-min.jpeg"
+          />
 
           <!-- Group 2 -->
-          <img class="w-72 object-cover" src="./images/image2.jpeg" />
-          <img class="w-72 object-cover" src="./images/image3.jpeg" />
-          <img class="w-72 object-cover" src="./images/image4.jpeg" />
-          <img class="w-72 object-cover" src="./images/image5.jpeg" />
-          <img class="w-72 object-cover" src="./images/image6.jpeg" />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/aboutus/View-14-min.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/aboutus/View-06-min.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/aboutus/View-16-min.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/aboutus/View-02-min.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/aboutusimage.jpeg"
+          />
         </div>
       </div>
 
@@ -449,7 +478,7 @@
             ></textarea>
             <button
               type="submit"
-              class="border border-white px-6 py-2 uppercase text-sm hover:bg-white hover:text-black transition"
+              class="border border-white px-6 py-2 uppercase text-sm bg-white text-black hover:bg-[#B46C06]"
             >
               Submit
             </button>
@@ -636,37 +665,43 @@
       function showProject(index) {
         const project = projects[index];
         const container = document.getElementById("project-content");
+
+        // Add animation class to trigger
+        container.classList.remove("fade-up"); // reset
+        void container.offsetWidth; // reflow to restart animation
+        container.classList.add("fade-up");
+
         container.innerHTML = `
-         <!-- Left Text -->
-        <div class="md:pt-[230px]">
-          <h3 class="text-2xl uppercase mb-2 md:mb-5 font-medium font-heading">${project.title}</h3>
-          <div class="mb-3 md:mb-5 pb-4 md:pb-8 h-[85px]">
-          <p class="text-sm font-medium font-paragraph max-w-sm text-justify">${project.description}</p>
-          </div>
-          <a href="#" class="border border-white text-white text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition">ENQUIRE NOW</a>
-        </div>
+  <!-- Left Text (title + description from left) -->
+  <div class="md:pt-[230px]">
+    <h3 class="text-2xl uppercase mb-2 md:mb-5 font-medium font-heading fade-in-left delay-200">${project.title}</h3>
+    <div class="mb-3 md:mb-5 pb-4 md:pb-8 h-[85px] fade-in-left delay-400">
+      <p class="text-sm font-medium font-paragraph max-w-sm text-justify">${project.description}</p>
+    </div>
+    <a href="#" class="border border-white text-white text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition">ENQUIRE NOW</a>
+  </div>
 
-        <!-- Center Image -->
-        <div class="flex justify-center">
-          <img src="${project.image}"  class="w-full max-w-sm shadow-sm" alt="${project.title}" style="height: 400px;"/>
-        </div>
+  <!-- Center Image (optional zoom/fade) -->
+  <div class="flex justify-center fade-in-up delay-400">
+    <img src="${project.image}" class="w-full max-w-sm shadow-sm" alt="${project.title}" style="height: 400px;" />
+  </div>
 
-         <!-- Right Info -->
-          <div>
-            <div class="mb-4">
-              <h5 class="text-2xl font-medium font-heading">Square Feet</h5>
-              <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph">${project.squareFeet}</p>
-            </div>
-            <div class="mb-4">
-              <h5 class="text-2xl font-medium font-heading">No. of Rooms</h5>
-              <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph">${project.rooms}</p>
-            </div>
-            <div class="mb-4">
-              <h5 class="text-2xl font-medium font-heading">Price Range</h5>
-              <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph">${project.price}</p>
-            </div>
-          </div>
-      `;
+  <!-- Right Info (from right or bottom) -->
+  <div>
+    <div class="mb-4 ">
+      <h5 class="text-2xl font-medium font-heading">Square Feet</h5>
+      <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph fade-in-right delay-200">${project.squareFeet}</p>
+    </div>
+    <div class="mb-4 ">
+      <h5 class="text-2xl font-medium font-heading">No. of Rooms</h5>
+      <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph fade-in-right delay-400">${project.rooms}</p>
+    </div>
+    <div class="mb-4 ">
+      <h5 class="text-2xl font-medium font-heading">Price Range</h5>
+      <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph fade-in-right delay-600">${project.price}</p>
+    </div>
+  </div>
+`;
       }
 
       function nextProject() {
@@ -685,6 +720,27 @@
       AOS.init({
         duration: 1000, // animation duration in ms
         once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-reveal-up", "delay-600");
+              entry.target.classList.remove("opacity-0");
+              observer.unobserve(entry.target); // Animate only once
+            }
+          });
+        },
+        {
+          threshold: 0.3, // 30% visible
+        }
+      );
+
+      document.querySelectorAll(".reveal-on-scroll").forEach((el) => {
+        observer.observe(el);
       });
     </script>
   </body>
