@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
 
-@import "tailwindcss";
-
 /* Your local font-face rules */
 @font-face {
   font-family: 'Inria Sans';
@@ -16,7 +14,7 @@
   font-weight: 400;
 }
 
-/* ✅ Manually define Tailwind classes using your fonts */
+/*  Manually define Tailwind classes using your fonts */
 @layer utilities {
   .font-paragraph {
     @apply font-['Inria_Sans'];
@@ -27,6 +25,10 @@
     @apply font-['Inria_Serif'];
     font-family: 'Inria Serif', serif;
   }
+
+
+
+/*  Animations */
 
 @keyframes fade-in {
     from {
