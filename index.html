@@ -108,7 +108,7 @@
       <div
         class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 z-10 flex items-center"
       >
-        <!-- ✅ Limit max-width of TEXT only -->
+        <!-- Limit max-width of TEXT only -->
         <div
           class="text-white px-4 md:px-12 max-w-screen-xl w-full mx-auto mt-20 md:mt-72"
         >
@@ -673,31 +673,48 @@
         container.innerHTML = `
   <!-- Left Text (title + description from left) -->
   <div class="md:pt-[230px] ">
-    <h3 class="text-3xl uppercase mb-2 md:mb-5 font-medium font-heading fade-in-left delay-200">${project.title}</h3>
+    <h3 class="text-3xl uppercase mb-2 md:mb-5 font-medium font-heading fade-in-left delay-200">${
+      project.title
+    }</h3>
     <div class="mb-3 md:mb-5 pb-4 md:pb-8 fade-in-left delay-400">
-      <p class="text-base font-medium font-paragraph max-w-sm text-justify">${project.description}</p>
+      <p class="text-base font-medium font-paragraph max-w-sm text-justify" id="desc">
+    ${truncateText(project.description, 100)}
+    ${
+      project.description.length > 100
+        ? '<a href="./aboutus.html" class="text-yellow-500 ml-1 underline">Read More</a>'
+        : ""
+    }
+  </p>
     </div>
     <a href="#" class="border border-white text-white text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition">ENQUIRE NOW</a>
   </div>
 
   <!-- Center Image (optional zoom/fade) -->
   <div class="flex justify-center fade-in-up delay-400">
-    <img src="${project.image}" class="w-full max-w-sm shadow-sm" alt="${project.title}" style="height: 400px;" />
+    <img src="${project.image}" class="w-full max-w-sm shadow-sm" alt="${
+          project.title
+        }" style="height: 400px;" />
   </div>
 
   <!-- Right Info (from right or bottom) -->
   <div>
     <div class="mb-4 ">
       <h5 class="text-2xl font-medium font-heading">Square Feet</h5>
-      <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph fade-in-right delay-200">${project.squareFeet}</p>
+      <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph fade-in-right delay-200">${
+        project.squareFeet
+      }</p>
     </div>
     <div class="mb-4 ">
       <h5 class="text-2xl font-medium font-heading">No. of Rooms</h5>
-      <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph fade-in-right delay-400">${project.rooms}</p>
+      <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph fade-in-right delay-400">${
+        project.rooms
+      }</p>
     </div>
     <div class="mb-4 ">
       <h5 class="text-2xl font-medium font-heading">Price Range</h5>
-      <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph fade-in-right delay-600">${project.price}</p>
+      <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph fade-in-right delay-600">${
+        project.price
+      }</p>
     </div>
   </div>
 `;
@@ -741,6 +758,11 @@
       document.querySelectorAll(".reveal-on-scroll").forEach((el) => {
         observer.observe(el);
       });
+    </script>
+    <script>
+      function truncateText(text, limit) {
+        return text.length > limit ? text.substring(0, limit) + "..." : text;
+      }
     </script>
   </body>
 </html>
