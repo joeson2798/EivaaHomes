@@ -26,11 +26,6 @@
       sizes="180x180"
     />
 
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Inria+Sans&family=Inria+Serif&display=swap"
-      rel="stylesheet"
-    /> -->
-
     <!-- AOS CSS -->
     <link href="./js/aos.css" rel="stylesheet" />
 
@@ -114,7 +109,7 @@
       <div
         class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 z-10 flex items-center"
       >
-        <!-- ✅ Limit max-width of TEXT only -->
+        <!--  Limit max-width of TEXT only -->
         <div
           class="text-white px-4 md:px-12 max-w-screen-xl w-full mx-auto mt-20 md:mt-72"
         >
@@ -158,7 +153,7 @@
       >
         <video
           class="md:w-[100%] sm:w-[100%] w-[100%] h-[300px] lg:h-[650px] md:h-[680px] object-cover"
-          src="./images/aboutus/3773486-hd_1920_1080_30fps.mp4"
+          src="./images/video2.mp4"
           autoplay
           loop
           muted
@@ -324,11 +319,10 @@
       </div>
     </div>
     <!--photo section-->
-    <div
-      class="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row h-auto h-screen mt-[90px]"
-    >
+    <div class="flex flex-col md:flex-row h-auto md:h-screen mt-[90px]">
+      <!-- Block 1 -->
       <div
-        class="relative w-full h-[25vh] md:w-1/4 md:h-[90%] transition-all duration-500 overflow-hidden group hover:h-[45%] md:hover:h-[90%] md:hover:w-[45%]"
+        class="relative w-full h-[50vh] md:w-1/4 md:h-[90%] overflow-hidden group md:hover:h-[90%] md:hover:w-[45%] transition-all duration-500"
       >
         <img
           src="./images/aboutus/photosection1.jpeg"
@@ -338,19 +332,36 @@
           class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 pointer-events-none"
         ></div>
         <div
-          class="absolute md:bottom-25 md:left-10 sm:bottom-10 sm:left-10 bottom-10 left-10 text-white lg:text-3xl md:text-xl sm:text-xl text-xl translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0"
+          class="absolute bottom-10 left-5 text-white lg:text-3xl md:text-2xl sm:text-2xl"
         >
-          <h1 class="font-heading">Initial Planning</h1>
+          <h1
+            class="font-heading absolute sm:bottom-[100px] md:bottom-[60px] translate-y-full transition-all duration-500 md:group-hover:translate-y-0 md:mb-[20px]"
+          >
+            Initial Planning
+          </h1>
+          <!-- Static paragraph for small screens -->
           <p
-            class="text-base mt-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-justify pr-[20px] font-paragraph"
+            class="block md:hidden text-base text-justify pr-[20px] font-paragraph"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
+            Our architects and designers develop creative concepts that balance
+            aesthetics, functionality, and your unique requirements.
+          </p>
+          <!-- Animated paragraph for md and above -->
+          <p
+            class="hidden md:block text-base md:mb-[20px] pr-[20px] font-paragraph transform transition-all duration-500 ease-in-out md:opacity-0 md:translate-y-40 md:group-hover:opacity-100 md:group-hover:translate-y-0"
           >
             Our architects and designers develop creative concepts that balance
             aesthetics, functionality, and your unique requirements.
           </p>
         </div>
       </div>
+
+      <!-- Block 2 -->
       <div
-        class="relative w-full h-[25vh] md:w-1/4 md:h-[90%] transition-all duration-500 overflow-hidden group hover:h-[45%] md:hover:h-[90%] md:hover:w-[45%]"
+        class="relative w-full h-[50vh] md:w-1/4 md:h-[90%] overflow-hidden group md:hover:h-[90%] md:hover:w-[45%] transition-all duration-500"
       >
         <img
           src="./images/aboutus/photosection2.jpeg"
@@ -360,19 +371,36 @@
           class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 pointer-events-none"
         ></div>
         <div
-          class="absolute md:bottom-25 md:left-10 sm:bottom-10 sm:left-10 bottom-10 left-10 text-white lg:text-3xl md:text-xl sm:text-xl text-xl translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0"
+          class="absolute bottom-10 left-5 text-white lg:text-3xl md:text-2xl text-xl"
         >
-          <h1 class="font-heading">Concept Design</h1>
+          <h1
+            class="font-heading absolute sm:bottom-[100px] md:bottom-[60px] translate-y-full transition-all duration-500 md:group-hover:translate-y-0 mb-[20px]"
+          >
+            Concept Design
+          </h1>
+          <!-- Static paragraph for small screens -->
           <p
-            class="text-base mt-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-justify pr-[20px] font-paragraph"
+            class="block md:hidden text-base text-justify pr-[20px] font-paragraph"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
+            Our architects and designers develop creative concepts that balance
+            aesthetics, functionality, and your unique requirements.
+          </p>
+          <!-- Animated paragraph for md and above -->
+          <p
+            class="hidden md:block text-base mb-[20px] pr-[20px] font-paragraph transform transition-all duration-500 ease-in-out md:opacity-0 md:translate-y-40 md:group-hover:opacity-100 md:group-hover:translate-y-0"
           >
             Our architects and designers develop creative concepts that balance
             aesthetics, functionality, and your unique requirements.
           </p>
         </div>
       </div>
+
+      <!-- Block 3 -->
       <div
-        class="relative w-full h-[25vh] md:w-1/4 md:h-[90%] transition-all duration-500 overflow-hidden group hover:h-[45%] md:hover:h-[90%] md:hover:w-[45%]"
+        class="relative w-full h-[50vh] md:w-1/4 md:h-[90%] overflow-hidden group md:hover:h-[90%] md:hover:w-[45%] transition-all duration-500"
       >
         <img
           src="./images/aboutus/photosection3.jpeg"
@@ -382,19 +410,35 @@
           class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 pointer-events-none"
         ></div>
         <div
-          class="absolute md:bottom-25 md:left-10 sm:bottom-10 sm:left-10 bottom-10 left-10 text-white lg:text-3xl md:text-xl sm:text-xl text-xl translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0"
+          class="absolute bottom-10 left-5 text-white lg:text-3xl md:text-2xl text-xl"
         >
-          <h1 class="font-heading">Execution and Craftmanship</h1>
+          <h1
+            class="font-heading absolute bottom-[80px] md:bottom-[60px] translate-y-full transition-all duration-500 md:group-hover:translate-y-0 md:mb-[20px]"
+          >
+            Execution and Craftmanship
+          </h1>
+          <!-- Static paragraph for small screens -->
           <p
-            class="text-base mt-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-justify pr-[20px] font-paragraph"
+            class="block md:hidden text-base text-justify pr-[20px] font-paragraph"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
+            Skilled professionals bring the design to life with meticulous
+            attention to detail and quality craftsmanship.
+          </p>
+          <!-- Animated paragraph for md and above -->
+          <p
+            class="hidden md:block text-base mb-[20px] pr-[20px] font-paragraph transform transition-all duration-500 ease-in-out md:opacity-0 md:translate-y-40 md:group-hover:opacity-100 md:group-hover:translate-y-0"
           >
             Skilled professionals bring the design to life with meticulous
             attention to detail and quality craftsmanship.
           </p>
         </div>
       </div>
+
       <div
-        class="relative w-full h-[25vh] md:w-1/4 md:h-[90%] transition-all duration-500 overflow-hidden group hover:h-[45%] md:hover:h-[90%] md:hover:w-[45%]"
+        class="relative w-full h-[50vh] md:w-1/4 md:h-[90%] overflow-hidden group md:hover:h-[90%] md:hover:w-[45%] transition-all duration-500"
       >
         <img
           src="./images/aboutus/photosection4.jpeg"
@@ -404,11 +448,26 @@
           class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 pointer-events-none"
         ></div>
         <div
-          class="absolute md:bottom-25 md:left-10 sm:bottom-10 sm:left-10 bottom-10 left-10 text-white lg:text-3xl md:text-xl sm:text-xl text-xl translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0"
+          class="absolute bottom-10 left-5 text-white lg:text-3xl md:text-2xl sm:text-2xl"
         >
-          <h1 class="font-heading">Handover & Beyond</h1>
+          <h1
+            class="font-heading absolute bottom-[80px] md:bottom-[60px] translate-y-full transition-all duration-500 md:group-hover:translate-y-0 md:mb-[20px]"
+          >
+            Handover & Beyond
+          </h1>
+          <!-- Static paragraph for small screens -->
           <p
-            class="text-base mt-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-justify pr-[20px] font-paragraph"
+            class="block md:hidden text-base text-justify pr-[20px] font-paragraph"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
+            We ensure a smooth handover and provide ongoing support, making sure
+            you feel at home from day one.
+          </p>
+          <!-- Animated paragraph for md and above -->
+          <p
+            class="hidden md:block text-base md:mb-[20px] pr-[20px] font-paragraph transform transition-all duration-500 ease-in-out md:opacity-0 md:translate-y-40 md:group-hover:opacity-100 md:group-hover:translate-y-0"
           >
             We ensure a smooth handover and provide ongoing support, making sure
             you feel at home from day one.
@@ -416,6 +475,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Vision Section -->
     <div class="md:mt-[-74px]">
       <div
         class="bg-[#14212b] md:text-4xl lg:text-5xl sm:text-4xl py-[50px] sm:py-[120px] flex flex-col items-center sm:items-center sm:text-center text-justify px-[10px] sm:px-[0px]"
@@ -431,6 +492,8 @@
         </h1>
       </div>
     </div>
+
+    <!-- Vision Section Ends -->
 
     <!--contact section-->
     <section class="flex flex-col lg:flex-row w-full min-h-screen">
@@ -580,40 +643,6 @@
     <!-- Footer Section Ends-->
 
     <script>
-      const counters = document.querySelectorAll(".counter");
-      let triggered = false;
-
-      function runCounter() {
-        counters.forEach((counter) => {
-          const updateCount = () => {
-            const target = +counter.getAttribute("data-target");
-            const count = +counter.innerText;
-            const speed = 100;
-            const increment = Math.ceil(target / speed);
-
-            if (count < target) {
-              counter.innerText = count + increment;
-              setTimeout(updateCount, 30);
-            } else {
-              counter.innerText = target;
-            }
-          };
-          updateCount();
-        });
-      }
-
-      window.addEventListener("scroll", () => {
-        const sectionTop = document.querySelector(".counter-section").offsetTop;
-        const scrollTop = window.scrollY + window.innerHeight;
-
-        if (!triggered && scrollTop > sectionTop) {
-          runCounter();
-          triggered = true;
-        }
-      });
-    </script>
-
-    <script>
       // Mobile menu toggle
       const menuBtn = document.getElementById("menu-btn");
       const mobileMenu = document.getElementById("mobile-menu");
@@ -634,65 +663,6 @@
       requestAnimationFrame(raf);
     </script>
 
-    <script>
-      // Projects Section
-      let currentIndex = 0;
-      let projects = [];
-
-      // Load external JSON file
-      fetch("projects.json")
-        .then((response) => response.json())
-        .then((data) => {
-          projects = data;
-          showProject(currentIndex);
-        });
-
-      function showProject(index) {
-        const project = projects[index];
-        const container = document.getElementById("project-content");
-        container.innerHTML = `
-         <!-- Left Text -->
-        <div class="md:pt-[230px]">
-          <h3 class="text-2xl uppercase mb-2 md:mb-5 font-medium font-heading">${project.title}</h3>
-          <div class="mb-3 md:mb-5 pb-4 md:pb-8 h-[85px]">
-          <p class="text-sm font-medium font-paragraph max-w-sm text-justify">${project.description}</p>
-          </div>
-          <a href="#" class="border border-white text-white text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition">ENQUIRE NOW</a>
-        </div>
-
-        <!-- Center Image -->
-        <div class="flex justify-center">
-          <img src="${project.image}"  class="w-full max-w-sm shadow-sm" alt="${project.title}" style="height: 400px;"/>
-        </div>
-
-         <!-- Right Info -->
-          <div>
-            <div class="mb-4">
-              <h5 class="text-2xl font-medium font-heading">Square Feet</h5>
-              <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph">${project.squareFeet}</p>
-            </div>
-            <div class="mb-4">
-              <h5 class="text-2xl font-medium font-heading">No. of Rooms</h5>
-              <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph">${project.rooms}</p>
-            </div>
-            <div class="mb-4">
-              <h5 class="text-2xl font-medium font-heading">Price Range</h5>
-              <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph">${project.price}</p>
-            </div>
-          </div>
-      `;
-      }
-
-      function nextProject() {
-        currentIndex = (currentIndex + 1) % projects.length;
-        showProject(currentIndex);
-      }
-
-      function prevProject() {
-        currentIndex = (currentIndex - 1 + projects.length) % projects.length;
-        showProject(currentIndex);
-      }
-    </script>
     <!-- AOS JS -->
     <script src="./js/aos.js"></script>
     <script>
