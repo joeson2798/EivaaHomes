@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eivaa Homes</title>
+
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon.png"
+      sizes="180x180"
+    />
+
+    <!-- AOS CSS -->
+    <link href="./js/aos.css" rel="stylesheet" />
+
+    <script src="./js/tailwindbrowser.js"></script>
+
+    <script src="./js/scroll.js"></script>
+
+    <link
+      href="./assets/fontawesome-free-6.7.2-web/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans bg-[#fdfaf5] scroll-smooth">
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-sm"
+    >
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <a href="#" class="flex items-center space-x-2">
+            <img src="./images/eivaa icon.png" alt="Logo" class="h-10" />
+            <span class="font-semibold tracking-wide hidden">HOMESS</span>
+          </a>
+
+          <!-- Desktop Menu -->
+          <nav
+            class="hidden md:flex items-center text-sm font-medium font-paragraph"
+          >
+            <a href="./index.html" class="hover:text-[#b66a00] px-6">HOME</a>
+            <a href="./aboutus.html" class="hover:text-[#b66a00] px-6"
+              >ABOUT US</a
+            >
+            <a href="#" class="text-[#b66a00] px-6">GALLERY</a>
+            <a href="./projects.html" class="hover:text-[#b66a00] px-6"
+              >PROJECTS</a
+            >
+            <a href="#" class="hover:text-[#b66a00] px-6">CONTACT</a>
+          </nav>
+
+          <!-- Hamburger -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              class="text-gray-800 focus:outline-none text-2xl"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden flex-col space-y-3 pb-4 items-end text-right"
+        >
+          <a href="./index.html" class="block text-sm text-[#b66a00]">HOME</a>
+          <a href="./aboutus.html" class="block text-sm hover:text-[#b66a00]"
+            >ABOUT US</a
+          >
+          <a href="#" class="block text-sm hover:text-[#b66a00]">GALLERY</a>
+          <a href="#" class="block text-sm hover:text-[#b66a00]">PROJECTS</a>
+          <a href="#" class="block text-sm hover:text-[#b66a00]">CONTACT</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section Starts-->
+    <section
+      class="relative h-[90vh] w-full bg-cover bg-center overflow-hidden"
+      style="background-image: url('./images/gallery/galleryimage.jpeg')"
+    >
+      <!-- Black Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 z-10 flex items-center"
+      >
+        <!--  Limit max-width of TEXT only -->
+        <div class="text-white px-4 md:px-20 w-full mx-auto mt-48 md:mt-72">
+          <h1
+            class="text-2xl md:text-4xl font-heading font-medium tracking-wide opacity-0 animate-fade-in delay-1200"
+          >
+            EXPERIENCE THE BEAUTY
+          </h1>
+          <h1
+            class="text-2xl md:text-4xl font-heading font-medium mt-2 md:mt-1 tracking-wide opacity-0 animate-fade-in delay-800"
+          >
+            OF <span class="text-[#B46C06]">OUR CRAFTSMANSHIP</span>
+          </h1>
+          <p
+            class="text-xs sm:text-sm md:text-lg my-4 w-[70%] md:w-[70%] lg:w-[50%] xl:w-[35%] max-w-xl font-paragraph text-justify opacity-0 animate-fade-in delay-400"
+          >
+            EIVAA HOMESS BRINGS YOUR VISION TO LIFE WITH TAILOR-MADE
+            ARCHITECTURAL EXCELLENCE
+          </p>
+          <a
+            href="#"
+            class="border border-white text-white text-xs sm:text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition mt-2"
+          >
+            VIEW OUR LATEST PROJECTS
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section End-->
+
+    <!-- Gallery Section Starts -->
+
+    <section class="md:py-10" id="gallery-section">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-center mt-5 mb-5 pb-2 md:mt-10 md:mb-10 md:pb-10 lg:mt-12 lg:mb-10 lg:pb-10 font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading"
+        >
+          DISCOVER OUR PORTFOLIO
+        </h2>
+
+        <!-- First Row -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Left Column -->
+          <div class="flex flex-col gap-5 w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_1.jpeg"
+              alt="gallery_1.jpeg"
+              class="w-full h-[390px]"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            />
+            <img
+              src="./images/gallery/gallery_2.jpeg"
+              alt="gallery_2.jpeg"
+              class="w-full h-[396px] object-cover"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            />
+          </div>
+
+          <!-- Middle Column -->
+          <div class="flex flex-col gap-5 w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_3.jpeg"
+              alt="gallery_3.jpeg"
+              class="w-full h-[535px]"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            />
+            <img
+              src="./images/gallery/gallery_6.jpeg"
+              alt="gallery_6.jpeg"
+              class="w-full h-[250px]"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            />
+          </div>
+
+          <!-- Right Column -->
+          <div class="flex flex-col gap-5 w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_4.jpeg"
+              alt="gallery_4.jpeg"
+              class="w-full h-[230px]"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            />
+            <img
+              src="./images/gallery/gallery_5.jpeg"
+              alt="gallery_5.jpeg"
+              class="w-full h-[580px] object-cover"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            />
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="md:col-span-2 w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_7.jpeg"
+              alt="gallery_7.jpeg"
+              class="w-full h-full"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            />
+          </div>
+          <div class="w-full overflow-hidden mt-6">
+            <img
+              src="./images/gallery/gallery_8.jpeg"
+              alt="gallery_8.jpeg"
+              class="w-full h-full"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            />
+          </div>
+        </div>
+
+        <!-- Third Row -->
+        <div class="grid md:grid-cols-3 gap-4 mt-4">
+          <div class="w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_9.jpeg"
+              alt="gallery_9.jpeg"
+              class="w-full h-full object-cover"
+              data-aos="fade-up"
+              data-aos-delay="900"
+            />
+          </div>
+          <div class="w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_10.jpeg"
+              alt="gallery_10.jpeg"
+              class="w-full h-full object-cover"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            />
+          </div>
+          <div class="w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_11.jpeg"
+              alt="gallery_11.jpeg"
+              class="w-full h-full object-cover"
+              data-aos="fade-up"
+              data-aos-delay="1100"
+            />
+          </div>
+        </div>
+
+        <!-- First Row -->
+        <div class="grid md:grid-cols-3 gap-6" id="row_1">
+          <!-- Left Column -->
+          <div class="flex flex-col gap-5 w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_12.jpeg"
+              alt="gallery_1.jpeg"
+              class="w-full h-[390px]"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            />
+            <img
+              src="./images/gallery/gallery_2.jpeg"
+              alt="gallery_2.jpeg"
+              class="w-full h-[396px] object-cover"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            />
+          </div>
+
+          <!-- Middle Column -->
+          <div class="flex flex-col gap-5 w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_3.jpeg"
+              alt="gallery_3.jpeg"
+              class="w-full h-[535px]"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            />
+            <img
+              src="./images/gallery/gallery_6.jpeg"
+              alt="gallery_6.jpeg"
+              class="w-full h-[250px]"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            />
+          </div>
+
+          <!-- Right Column -->
+          <div class="flex flex-col gap-5 w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_14.jpeg"
+              alt="gallery_4.jpeg"
+              class="w-full h-[230px]"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            />
+            <img
+              src="./images/gallery/gallery_5.jpeg"
+              alt="gallery_5.jpeg"
+              class="w-full h-[580px] object-cover"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            />
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="grid md:grid-cols-3 gap-6" id="row_2">
+          <div class="md:col-span-2 w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_7.jpeg"
+              alt="gallery_7.jpeg"
+              class="w-full h-full"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            />
+          </div>
+          <div class="w-full overflow-hidden mt-6">
+            <img
+              src="./images/gallery/gallery_8.jpeg"
+              alt="gallery_8.jpeg"
+              class="w-full h-full"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            />
+          </div>
+        </div>
+
+        <!-- Third Row -->
+        <div class="grid md:grid-cols-3 gap-4 mt-4" id="row_3">
+          <div class="w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_9.jpeg"
+              alt="gallery_9.jpeg"
+              class="w-full h-full object-cover"
+              data-aos="fade-up"
+              data-aos-delay="900"
+            />
+          </div>
+          <div class="w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_10.jpeg"
+              alt="gallery_10.jpeg"
+              class="w-full h-full object-cover"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            />
+          </div>
+          <div class="w-full overflow-hidden">
+            <img
+              src="./images/gallery/gallery_11.jpeg"
+              alt="gallery_11.jpeg"
+              class="w-full h-full object-cover"
+              data-aos="fade-up"
+              data-aos-delay="1100"
+            />
+          </div>
+        </div>
+        <!-- Load More Button -->
+        <div class="text-center mb-8 pb-8">
+          <button
+            id="loadMoreBtn"
+            class="px-[18px] py-[6px] text-[16px] font-semibold border-2 border-[#b66a00] text-[#b66a00] rounded-none cursor-pointer font-paragraph"
+          >
+            LOAD MORE
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section End -->
+
+    <!-- Footer Section Starts-->
+    <footer class="bg-[#061c2b] text-white px-6 md:px-20 pt-12 pb-6">
+      <div class="flex flex-col lg:flex-row justify-between mb-8 gap-8 mt-6">
+        <div class="max-w-md mb-8">
+          <img src="./images/eivaaiconwhite.png" class="mb-4 w-32" />
+          <nav class="flex flex-wrap md:gap-4 text-sm">
+            <a href="#" class="hover:underline mr-6">Home</a>
+            <a href="#" class="hover:underline mr-6">About us</a>
+            <a href="#" class="hover:underline mr-6">Projects</a>
+            <a href="#" class="hover:underline mr-6">Contact us</a>
+          </nav>
+        </div>
+        <div class="max-w-md">
+          <p class="text-gray-300 mb-3">
+            Subscribe to stay tuned for new web design and latest updates. Let's
+            do it!
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="px-4 py-2 text-black w-full sm:w-auto bg-gray-100"
+            />
+            <button class="bg-white text-black px-4 py-2">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-white pt-4 text-sm flex flex-col md:flex-row justify-between items-center gap-2"
+      >
+        <!-- Policy Links -->
+        <div class="flex gap-4 mb-2 md:mb-0">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Legal</a>
+        </div>
+      </div>
+
+      <!-- Copyright + Social in One Row -->
+      <div class="flex items-center justify-between mt-4 text-xs text-gray-300">
+        <p>© 2021 All Rights Reserved</p>
+        <div class="flex gap-3 text-lg text-white ml-4">
+          <!-- <i class="fab fa-facebook-f"></i>
+          <i class="fas fa-paper-plane"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-linkedin-in"></i> -->
+          <img
+            src="./images/socialmedia/facebook-boxed.svg"
+            alt="facebook"
+            class="w-4 h-4"
+          />
+          <img
+            src="./images/socialmedia/instagram.svg"
+            class="w-4 h-4"
+            alt="instagram"
+          />
+          <img
+            src="./images/socialmedia/linkedin.svg"
+            class="w-4 h-4"
+            alt="linkedin"
+          />
+          <img
+            src="./images/socialmedia/twitter.svg"
+            class="w-4 h-4"
+            alt="twitter"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section Ends-->
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- AOS JS -->
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
+
+    <!-- Gallery Section Visible Count-->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Select all images inside the gallery-section
+        const images = document.querySelectorAll("#gallery-section img");
+        const loadMoreBtn = document.getElementById("loadMoreBtn");
+        const row_1 = document.getElementById("row_1");
+        const row_2 = document.getElementById("row_2");
+        const row_3 = document.getElementById("row_3");
+        const imagesPerClick = 11;
+        let visibleCount = 0;
+
+        function showNextImages() {
+          for (let i = visibleCount; i < visibleCount + imagesPerClick; i++) {
+            if (images[i]) {
+              images[i].classList.remove("hidden");
+              loadMoreBtn.parentElement.classList.add("md:mt-10");
+            }
+          }
+          visibleCount += imagesPerClick;
+
+          if (visibleCount >= images.length) {
+            loadMoreBtn.disabled = true;
+            loadMoreBtn.style.display = "none";
+            row_1.classList.add("mt-4");
+            row_2.classList.add("mt-4");
+            row_3.classList.add("mt-4");
+            loadMoreBtn.parentElement.classList.add("mt-20");
+          }
+        }
+
+        // Initially hide all images
+        images.forEach((img) => img.classList.add("hidden"));
+
+        // Show initial batch
+        showNextImages();
+
+        // Add click listener
+        loadMoreBtn.addEventListener("click", showNextImages);
+      });
+    </script>
+  </body>
+</html>
