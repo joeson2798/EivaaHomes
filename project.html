@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eivaa Homes</title>
+
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon.png"
+      sizes="180x180"
+    />
+
+    <!-- AOS CSS -->
+    <link href="./js/aos.css" rel="stylesheet" />
+
+    <script src="./js/tailwindbrowser.js"></script>
+
+    <script src="./js/scroll.js"></script>
+
+    <link
+      href="./assets/fontawesome-free-6.7.2-web/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans bg-[#fdfaf5] scroll-smooth">
+    <!-- Header -->
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-sm px-3 md:px-20"
+    >
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <a href="#" class="flex items-center space-x-2">
+            <img src="./images/eivaa icon.png" alt="Logo" class="h-10" />
+            <span class="font-semibold tracking-wide hidden">HOMESS</span>
+          </a>
+
+          <!-- Desktop Menu -->
+          <nav
+            class="hidden md:flex items-center text-sm font-medium font-paragraph"
+          >
+            <a href="./index.html" class="hover:text-[#b66a00] px-6">HOME</a>
+            <a href="./aboutus.html" class="hover:text-[#b66a00] px-6"
+              >ABOUT US</a
+            >
+            <a href="./gallery.html" class="hover:text-[#b66a00] px-6"
+              >GALLERY</a
+            >
+            <a href=".#" class="text-[#b66a00] px-6">PROJECTS</a>
+            <a href="./contact.html" class="hover:text-[#b66a00] px-6"
+              >CONTACT</a
+            >
+          </nav>
+
+          <!-- Hamburger -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              class="text-gray-800 focus:outline-none text-2xl"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden flex-col space-y-3 pb-4 items-end text-right"
+        >
+          <a href="./index.html" class="block text-sm hover:text-[#b66a00]"
+            >HOME</a
+          >
+          <a href="./aboutus.html" class="block text-sm hover:text-[#b66a00]"
+            >ABOUT US</a
+          >
+          <a href="./gallery.html" class="block text-sm hover:text-[#b66a00]"
+            >GALLERY</a
+          >
+          <a href="#" class="block text-sm text-[#b66a00]">PROJECTS</a>
+          <a href="./contact.html" class="block text-sm hover:text-[#b66a00]"
+            >CONTACT</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section Starts-->
+    <section
+      class="relative h-[90vh] w-full bg-cover bg-center overflow-hidden overflow-x-hidden"
+      style="background-image: url('./images/project/projectsimage.jpeg')"
+    >
+      <!-- Black Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 z-10 flex items-center"
+      >
+        <!--  Limit max-width of TEXT only -->
+        <div class="text-white px-4 md:px-20 w-full mx-auto mt-48 md:mt-72">
+          <h1
+            class="text-2xl md:text-4xl font-heading font-medium tracking-wide opacity-0 animate-fade-in delay-1200"
+          >
+            CRAFTING TIMELESS
+          </h1>
+          <h1
+            class="text-2xl md:text-4xl font-heading font-medium text-[#B46C06] mt-2 md:mt-1 tracking-wide opacity-0 animate-fade-in delay-800"
+          >
+            MASTERPIECES
+          </h1>
+          <p
+            class="text-xs sm:text-sm md:text-lg my-4 w-[70%] md:w-[70%] lg:w-[50%] xl:w-[40%] max-w-xl font-paragraph text-justify opacity-0 animate-fade-in delay-400"
+          >
+            EXPLORE OUR CURATED SELECTION OF ARCHITECTURAL BRILLIANCE.
+          </p>
+          <a
+            href="#"
+            class="border border-white text-white text-xs sm:text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition mt-2"
+          >
+            VIEW OUR LATEST PROJECTS
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section End-->
+
+    <!-- Current Project Section Starts -->
+    <section class="lg:py-16 py-6 px-20 overflow-hidden overflow-x-hidden">
+      <div class="mx-auto">
+        <h2 class="text-2xl md:text-4xl uppercase lg:mb-10 mb-5 font-heading">
+          Current Masterpiece
+        </h2>
+        <div class="row">
+          <div class="grid md:grid-cols-1 gap-8">
+            <img
+              src="images/project/greenway.jpeg"
+              alt="Project"
+              class="rounded-0 shadow object-cover w-full max-h-[450px]"
+            />
+          </div>
+        </div>
+        <div class="flex flex-wrap items-end">
+          <div class="w-full md:w-1/2 mt-4 gap-4">
+            <h3
+              class="text-xl sm:text-3xl uppercase md:mb-3 mb-1 md:mt-5 font-heading"
+              data-aos="fade-up"
+            >
+              <a href="./anthara.html">Anthara</a>
+            </h3>
+            <p
+              class="md:mb-4 text-justify md:w-5/6 font-paragraph"
+              data-aos="fade-up"
+            >
+              Discover our latest architectural masterpiece — a luxury villa
+              nestled in the heart of serene landscapes. This tailor-made home
+              reflects modern elegance, featuring expansive glass facades,
+              open-concept living spaces, and intricate detailing. Designed to
+              harmonize with nature while offering ultimate comfort, this
+              project exemplifies EIVAA HOMESS's dedication to creating timeless
+              luxury.
+            </p>
+            <div class="flex flex-row gap-3 mb-4 md:mt-8 mt-6">
+              <button
+                class="lg:text-xl border-2 border-black px-[12px] md:px-[8px] lg:px-[35px] py-[2px] md:py-[2px] lg:py-[2px] hover:bg-black hover:text-white transition font-heading font-semibold md:text-base"
+              >
+                Download Brochure
+              </button>
+              <button
+                class="lg:text-xl border-2 border-black px-[12px] md:px-[8px] lg:px-[35px] py-[2px] md:py-[2px] lg:py-[2px] hover:bg-black hover:text-white transition font-heading font-semibold md:text-base"
+              >
+                View Floor Plan
+              </button>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2 gap-4">
+            <div class="flex flex-col md:flex-row gap-3 mb-3 mt-5">
+              <div class="w-full md:w-1/2">
+                <div
+                  class="bg-[#eae3d9] shadow-sm rounded-none text-left h-full px-2 lg:py-8 py-1"
+                >
+                  <div class="px-2 py-2 md:px-1 md:py-2 xl:px-5 xl:py-1">
+                    <div
+                      class="mb-3 md:text-[11px] lg:text-[16px] flex items-center font-heading text-sm md:text-base lg:text-xl gap-2 font-medium"
+                    >
+                      <img
+                        src="images/project/location_icon.png"
+                        alt="location_icon"
+                        class="md:w-[15px] pb-3 md:pb-3 lg:pb-2"
+                      />
+                      Project Location
+                    </div>
+                    <div
+                      class="font-bold uppercase md:text-[12px] lg:text-[18px] text-[#b66a00] font-paragraph text-sm md:text-base xl:text-xl"
+                    >
+                      Coimbatore
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full md:w-1/2">
+                <div
+                  class="bg-[#eae3d9] shadow-sm rounded-none text-left h-full px-2 lg:py-8 py-1"
+                >
+                  <div class="px-2 py-3 md:px-1 md:py-2 xl:px-5 xl:py-1">
+                    <div
+                      class="mb-3 md:text-[11px] lg:text-[16px] flex items-center font-heading text-sm md:text-base lg:text-xl md:pt-1 gap-2 font-medium"
+                    >
+                      <img
+                        src="images/project/house_icon.png"
+                        alt="house_icon"
+                        class="w-[26px] md:w-[20px] pb-2 md:pb-2 lg:pb-1"
+                      />
+                      Total number of houses
+                    </div>
+                    <div
+                      class="font-bold uppercase md:text-[12px] lg:text-[18px] text-[#b66a00] font-paragraph text-sm md:text-base xl:text-xl md:pt-1 lg:pt-0"
+                    >
+                      32 Houses
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Current Project Section Ends -->
+
+    <!-- Legacy Projects Starts -->
+    <section
+      class="md:py-6 px-20 overflow-hidden overflow-x-hidden"
+      id="project-section"
+    >
+      <div class="mx-auto">
+        <h2 class="text-xl md:text-4xl uppercase md:mb-10 mb-5 font-heading">
+          Our Legacy of Excellence
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Iva Agam -->
+          <div>
+            <img
+              src="images/project/plots_night_view.jpeg"
+              alt="IVA Agam"
+              class="w-full h-[400px] object-cover shadow mb-3"
+              data-aos="fade-right"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+            />
+            <div
+              class="text-2xl flex items-center uppercase lg:mt-8 font-heading font-semibold gap-1"
+            >
+              Iva Agam<img
+                src="images/project/arrow_icon.png"
+                alt="arrow_icon"
+                class="w-4 h-4 mt-[2px]"
+              />
+            </div>
+            <p
+              class="text-sm uppercase md:pt-5 pt-2 font-paragraph text-justify"
+              data-aos="fade-up"
+            >
+              Designed to harmonize with nature while offering ultimate comfort,
+              this project exemplifies EIVAA HOMESS's dedication to creating
+              timeless luxury.
+            </p>
+          </div>
+
+          <!-- IVA Aalayam -->
+          <div>
+            <img
+              src="images/project/plots_top_view.jpeg"
+              alt="IVA Aalayam"
+              class="w-full h-[400px] object-cover shadow mb-3"
+              data-aos="fade-left"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+            />
+            <div
+              class="text-2xl flex items-center uppercase lg:mt-8 font-heading font-semibold gap-1"
+            >
+              IVA Aalayam<img
+                src="images/project/arrow_icon.png"
+                alt="arrow_icon"
+                class="w-4 h-4 mt-[2px]"
+              />
+            </div>
+            <p
+              class="text-sm uppercase md:pt-5 pt-2 md:mb-4 mb-8 font-paragraph text-justify"
+              data-aos="fade-up"
+            >
+              Designed to harmonize with nature while offering ultimate comfort,
+              this project exemplifies EIVAA HOMESS's dedication to creating
+              timeless luxury.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Legacy Projects Starts -->
+
+    <!-- Gallery Section Starts-->
+    <section
+      class="bg-[#071e2e] text-white py-12 px-6 overflow-hidden pb-8 md:pb-28"
+    >
+      <!-- Heading Row (only for md and up) -->
+      <div
+        class="hidden md:flex flex-wrap justify-between items-center mb-6 p-10"
+      >
+        <h2 class="text-xl md:text-4xl font-medium font-heading leading-tight">
+          FEEL THE <span class="text-yellow-600">LUXURY</span><br />FROM OUR
+          GALLERY
+        </h2>
+        <a
+          href="#"
+          class="border border-white px-4 py-2 hover:bg-white hover:text-[#071e2e] transition font-paragraph"
+        >
+          VIEW ALL
+        </a>
+      </div>
+
+      <!-- Heading Row for small screens only -->
+      <div class="flex md:hidden flex-col mb-4">
+        <h2 class="text-xl font-medium font-heading leading-tight">
+          FEEL THE <span class="text-yellow-600">LUXURY</span><br />FROM OUR
+          GALLERY
+        </h2>
+      </div>
+
+      <!-- Scrolling Container -->
+      <div class="relative overflow-hidden">
+        <div class="scroll-track flex gap-5 w-max">
+          <!-- Group 1 -->
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/galleryimage1.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/galleryimage2.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/galleryimage3.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/galleryimage4.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/galleryimage1.jpeg"
+          />
+
+          <!-- Group 2 -->
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/galleryimage2.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/galleryimage3.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/galleryimage4.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/galleryimage1.jpeg"
+          />
+          <img
+            class="w-72 object-cover md:h-[400px]"
+            src="./images/galleryimage2.jpeg"
+          />
+        </div>
+      </div>
+
+      <!-- Bottom "View All" for small screens only -->
+      <div class="md:hidden flex justify-end mt-6 pr-0 md:pr-6">
+        <a
+          href="#"
+          class="border border-white px-4 py-2 hover:bg-white hover:text-black transition text-sm md:hidden font-paragraph"
+        >
+          VIEW ALL
+        </a>
+      </div>
+    </section>
+
+    <!-- Animation Style -->
+    <style>
+      @keyframes scrollGallery {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .scroll-track {
+        animation: scrollGallery 30s linear infinite;
+      }
+    </style>
+
+    <!-- Contact Section Starts-->
+    <section class="flex flex-col lg:flex-row w-full min-h-screen">
+      <!-- Left: Background Image with Blurred Overlay Form -->
+      <div class="relative w-full lg:w-1/2 h-[500px] lg:h-auto overflow-hidden">
+        <!-- Background as image -->
+        <div
+          class="absolute inset-0 bg-[url('./images/contactusimage.jpeg')] bg-cover bg-center"
+        ></div>
+
+        <!-- Blurred Form Overlay -->
+        <div
+          class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center"
+        >
+          <form class="text-white p-10 w-full max-w-md font-paragraph">
+            <h2 class="text-3xl font-heading font-semibold mb-6">Enquire</h2>
+            <input
+              type="text"
+              placeholder="Name"
+              class="w-full mb-4 px-4 py-2 bg-transparent border border-white placeholder-white text-white outline-none"
+            />
+            <input
+              type="email"
+              placeholder="Email Id"
+              class="w-full mb-4 px-4 py-2 bg-transparent border border-white placeholder-white text-white outline-none"
+            />
+            <textarea
+              placeholder="Your Message"
+              rows="4"
+              class="w-full mb-4 px-4 py-2 bg-transparent border border-white placeholder-white text-white outline-none resize-none"
+            ></textarea>
+            <button
+              type="submit"
+              class="border border-white px-6 py-2 uppercase text-sm bg-white text-black hover:bg-[#B46C06]"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="w-full lg:w-1/2 bg-white p-10 flex flex-col justify-center font-paragraph"
+      >
+        <h2 class="text-3xl font-medium font-heading mb-2">Contact Us</h2>
+        <p class="text-gray-600 mb-2 md:mb-6">
+          Get in touch with us for any queries and suggestions
+        </p>
+        <div
+          class="flex flex-col md:flex-row gap-3 md:gap-10 mb-6 mt-2 md:mt-12"
+        >
+          <div>
+            <h4 class="font-semibold text-lg mb-1 text-gray-500">
+              General queries
+            </h4>
+            <p>+91 12345 67890<br />Evaahomess@gmail.com</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg mb-1 text-gray-500">Careers</h4>
+            <p>Evaahomess@gmail.com</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-4">
+          <iframe
+            class="w-full md:w-48 h-28 border-none"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.469175989888!2d76.98089431533403!3d11.018982892142469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857e2a9eb9ed5%3A0x30596d1e20db5b85!2sCoimbatore%2C%20Tamil%20Nadu%20641048!5e0!3m2!1sen!2sin!4v1610000000000!5m2!1sen!2sin"
+            loading="lazy"
+          ></iframe>
+          <p class="text-sm">
+            1166/2A1, EVAHA HOMESS, Kurumbapalayam Road, Kalapatti,<br />
+            Coimbatore - 641 048
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section Ends-->
+
+    <!-- Footer Section Starts-->
+    <footer class="bg-[#061c2b] text-white px-6 md:px-20 pt-12 pb-6">
+      <div class="flex flex-col lg:flex-row justify-between mb-8 gap-8 mt-6">
+        <div class="max-w-md mb-8">
+          <img src="./images/eivaaiconwhite.png" class="mb-4 w-32" />
+          <nav class="flex flex-wrap md:gap-4 text-sm">
+            <a href="#" class="hover:underline mr-6">Home</a>
+            <a href="#" class="hover:underline mr-6">About us</a>
+            <a href="#" class="hover:underline mr-6">Projects</a>
+            <a href="#" class="hover:underline mr-6">Contact us</a>
+          </nav>
+        </div>
+        <div class="max-w-md">
+          <p class="text-gray-300 mb-3">
+            Subscribe to stay tuned for new web design and latest updates. Let's
+            do it!
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="px-4 py-2 text-black w-full sm:w-auto bg-gray-100"
+            />
+            <button class="bg-white text-black px-4 py-2">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-white pt-4 text-sm flex flex-col md:flex-row justify-between items-center gap-2"
+      >
+        <!-- Policy Links -->
+        <div class="flex gap-4 mb-2 md:mb-0">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Legal</a>
+        </div>
+      </div>
+
+      <!-- Copyright + Social in One Row -->
+      <div class="flex items-center justify-between mt-4 text-xs text-gray-300">
+        <p>© 2021 All Rights Reserved</p>
+        <div class="flex gap-3 text-lg text-white ml-4">
+          <!-- <i class="fab fa-facebook-f"></i>
+          <i class="fas fa-paper-plane"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-linkedin-in"></i> -->
+          <img
+            src="./images/socialmedia/facebook-boxed.svg"
+            alt="facebook"
+            class="w-4 h-4"
+          />
+          <img
+            src="./images/socialmedia/instagram.svg"
+            class="w-4 h-4"
+            alt="instagram"
+          />
+          <img
+            src="./images/socialmedia/linkedin.svg"
+            class="w-4 h-4"
+            alt="linkedin"
+          />
+          <img
+            src="./images/socialmedia/twitter.svg"
+            class="w-4 h-4"
+            alt="twitter"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section Ends-->
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- AOS JS -->
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
+  </body>
+</html>

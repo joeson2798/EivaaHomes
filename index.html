@@ -62,7 +62,9 @@
             <a href="./gallery.html" class="hover:text-[#b66a00] px-6"
               >GALLERY</a
             >
-            <a href="#" class="hover:text-[#b66a00] px-6">PROJECTS</a>
+            <a href="./project.html" class="hover:text-[#b66a00] px-6"
+              >PROJECTS</a
+            >
             <a href="./contact.html" class="hover:text-[#b66a00] px-6"
               >CONTACT</a
             >
@@ -292,7 +294,7 @@
     <!-- Personalize Section starts-->
     <section class="bg-[#fdfaf5] py-24 px-6 text-gray-800 font-serif">
       <div
-        class="flex flex-col lg:flex-row items-center justify-between gap-5 pb-6"
+        class="flex flex-col lg:flex-row items-center justify-between gap-0 pb-1 md:gap-5 md:pb-6"
       >
         <!-- Left Image -->
         <div class="w-full lg:w-1/2 text-center flex justify-center">
@@ -304,7 +306,7 @@
         </div>
 
         <!-- Right Content -->
-        <div class="w-full lg:w-1/2 space-y-6">
+        <div class="w-full lg:w-1/2 space-y-1 md:space-y-6">
           <h2 class="text-xl md:text-3xl font-medium font-heading">
             Tailor Your Dream Home <br />
             <span class="text-yellow-700">with EIVAA HOMESS</span>
@@ -317,30 +319,49 @@
           <!-- Button (only visible on large screens) -->
           <a
             href="#"
-            class="hidden lg:inline-block border border-yellow-700 text-yellow-700 px-5 py-2 hover:bg-yellow-700 hover:text-white transition text-sm font-paragraph"
+            class="hidden md:inline-block border border-yellow-700 text-yellow-700 px-5 py-2 hover:bg-yellow-700 hover:text-white transition text-sm font-paragraph"
           >
             START CUSTOMIZING YOUR HOME TODAY
           </a>
         </div>
       </div>
 
-      <!-- Bottom Features -->
+      <!-- Bottom Features small screen -->
       <div
-        class="flex flex-wrap justify-around items-center mt-2 pt-6 text-center text-lg gap-4 font-paragraph"
+        class="flex flex-wrap items-start mt-2 pt-3 md:pt-6 text-lg gap-4 font-paragraph md:justify-around"
       >
-        <div>Personalized Design Consultations</div>
-        <div>Flexible Architectural Adjustments</div>
-        <div>Expert Guidance Throughout</div>
-      </div>
+        <!-- Small screen version with icons (left aligned) -->
+        <div class="block md:hidden space-y-4 text-left max-w-[470px] w-full">
+          <div class="flex items-start gap-2">
+            <img src="./images/tick.png" class="w-5 h-5 mt-1" alt="icon" />
+            <span>Personalized Design Consultations</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <img src="./images/tick.png" class="w-5 h-5 mt-1" alt="icon" />
+            <span>Flexible Architectural Adjustments</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <img src="./images/tick.png" class="w-5 h-5 mt-1" alt="icon" />
+            <span>Expert Guidance Throughout</span>
+          </div>
+          <div class="mt-6 text-center md:hidden">
+            <a
+              href="#"
+              class="border border-yellow-700 text-yellow-700 px-3 py-2 text-center max-w-xs w-full inline-block text-sm font-paragraph hover:bg-yellow-700 hover:text-white transition"
+            >
+              START CUSTOMIZING YOUR HOME TODAY
+            </a>
+          </div>
+        </div>
 
-      <!-- Button for small screens only -->
-      <div class="mt-6 text-center lg:hidden">
-        <a
-          href="#"
-          class="border border-yellow-700 text-yellow-700 px-3 py-2 text-center max-w-xs w-full inline-block text-sm font-paragraph hover:bg-yellow-700 hover:text-white transition"
+        <!-- Original layout for medium and large screens (no icons) -->
+        <div
+          class="hidden md:flex flex-wrap justify-around items-center w-full gap-4 text-center lg:text-lg md:text-base"
         >
-          START CUSTOMIZING YOUR HOME TODAY
-        </a>
+          <div>Personalized Design Consultations</div>
+          <div>Flexible Architectural Adjustments</div>
+          <div>Expert Guidance Throughout</div>
+        </div>
       </div>
     </section>
     <!-- Personalize Section Ends-->

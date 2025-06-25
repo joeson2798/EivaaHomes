@@ -42,7 +42,7 @@
   <body class="font-sans bg-[#fdfaf5] scroll-smooth">
     <!-- Header -->
     <header
-      class="sticky top-0 z-50 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-sm"
+      class="sticky top-0 z-50 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-sm px-3 md:px-20"
     >
       <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-4">
         <div class="flex justify-between items-center py-4">
@@ -63,7 +63,9 @@
             <a href="./gallery.html" class="hover:text-[#b66a00] px-6"
               >GALLERY</a
             >
-            <a href="" class="hover:text-[#b66a00] px-6">PROJECTS</a>
+            <a href="./project.html" class="hover:text-[#b66a00] px-6"
+              >PROJECTS</a
+            >
             <a href="#" class="text-[#b66a00] px-6">CONTACT</a>
           </nav>
 
@@ -90,7 +92,9 @@
           <a href="./gallery.html" class="block text-sm hover:text-[#b66a00]"
             >GALLERY</a
           >
-          <a href="#" class="block text-sm hover:text-[#b66a00]">PROJECTS</a>
+          <a href="./project.html" class="block text-sm hover:text-[#b66a00]"
+            >PROJECTS</a
+          >
           <a href="#" class="block text-sm hover:text-[#b66a00]">CONTACT</a>
         </div>
       </div>
@@ -333,5 +337,14 @@
       </div>
     </footer>
     <!-- Footer Section Ends-->
+
+    <!-- AOS JS -->
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
   </body>
 </html>
