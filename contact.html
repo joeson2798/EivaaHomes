@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eivaa Homes</title>
+
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon.png"
+      sizes="180x180"
+    />
+
+    <!-- AOS CSS -->
+    <link href="./js/aos.css" rel="stylesheet" />
+
+    <script src="./js/tailwindbrowser.js"></script>
+
+    <script src="./js/scroll.js"></script>
+
+    <link
+      href="./assets/fontawesome-free-6.7.2-web/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-sans bg-[#fdfaf5] scroll-smooth">
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-sm"
+    >
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <a href="#" class="flex items-center space-x-2">
+            <img src="./images/eivaa icon.png" alt="Logo" class="h-10" />
+            <span class="font-semibold tracking-wide hidden">HOMESS</span>
+          </a>
+
+          <!-- Desktop Menu -->
+          <nav
+            class="hidden md:flex items-center text-sm font-medium font-paragraph"
+          >
+            <a href="./index.html" class="hover:text-[#b66a00] px-6">HOME</a>
+            <a href="./aboutus.html" class="hover:text-[#b66a00] px-6"
+              >ABOUT US</a
+            >
+            <a href="./gallery.html" class="hover:text-[#b66a00] px-6"
+              >GALLERY</a
+            >
+            <a href="" class="hover:text-[#b66a00] px-6">PROJECTS</a>
+            <a href="#" class="text-[#b66a00] px-6">CONTACT</a>
+          </nav>
+
+          <!-- Hamburger -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              class="text-gray-800 focus:outline-none text-2xl"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden flex-col space-y-3 pb-4 items-end text-right"
+        >
+          <a href="./index.html" class="block text-sm text-[#b66a00]">HOME</a>
+          <a href="./aboutus.html" class="block text-sm hover:text-[#b66a00]"
+            >ABOUT US</a
+          >
+          <a href="./gallery.html" class="block text-sm hover:text-[#b66a00]"
+            >GALLERY</a
+          >
+          <a href="#" class="block text-sm hover:text-[#b66a00]">PROJECTS</a>
+          <a href="#" class="block text-sm hover:text-[#b66a00]">CONTACT</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section Starts-->
+    <section
+      class="relative h-[90vh] w-full bg-cover bg-center overflow-hidden"
+      style="background-image: url('./images/gallery/galleryimage.jpeg')"
+    >
+      <!-- Black Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 z-10 flex items-center"
+      >
+        <!--  Limit max-width of TEXT only -->
+        <div class="text-white px-4 md:px-20 w-full mx-auto mt-48 md:mt-72">
+          <h1
+            class="text-2xl md:text-4xl font-heading font-medium tracking-wide opacity-0 animate-fade-in delay-1200"
+          >
+            LET'S BUILD YOUR DREAM
+          </h1>
+          <h1
+            class="text-2xl md:text-4xl font-heading font-medium mt-2 md:mt-1 tracking-wide opacity-0 animate-fade-in delay-800"
+          >
+            <span class="text-[#B46C06]"> HOME TOGETHER</span>
+          </h1>
+          <p
+            class="text-xs sm:text-sm md:text-sm my-4 w-[70%] md:w-[70%] lg:w-[50%] xl:w-[35%] max-w-xl font-paragraph text-justify opacity-0 animate-fade-in delay-400"
+          >
+            CONTACT EIVAA HOMESS TO TURN YOUR VISION INTO A REALITY.
+          </p>
+          <a
+            href="#"
+            class="border border-white text-white text-xs sm:text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition mt-2"
+          >
+            GET IN TOUCH
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section End-->
+
+    <!--Contact Section Starts-->
+
+    <!--get in touch-->
+    <div class="mt-[80px] mb-[40px]">
+      <div class="flex lg:flex-row sm:flex-col flex-col">
+        <div
+          class="lg:w-[25%] flex flex-col lg:items-start sm:text-center text-center lg:ml-[40px] xl:ml-[100px]"
+        >
+          <p
+            class="text-[#7A7A7A] text-sm md:text-base md:mr-[90px] sm:mr-[70px] mr-[55px] font-paragraph"
+          >
+            Contact us
+          </p>
+          <h1
+            class="sm:text-xl md:text-2xl lg:text-3xl text-lg font-heading font-semibold mt-[5px]"
+          >
+            GET IN <span class="text-[#b66a00]">TOUCH</span>
+          </h1>
+        </div>
+        <div
+          class="flex sm:flex-row flex-col items-center sm:items-stretch lg:w-[75%] justify-center sm:mt-[30px] lg:mt-[0px]"
+        >
+          <div
+            class="border-0 border-white bg-white sm:w-[30%] md:w-[200px] w-[210px] lg:w-[25%] xl:w-[250px] xl:px-[25px] xl:py-[40px] lg:px-[10px] lg:py-[30px] md:py-[25px] md:px-[18px] md:mr-[20px] sm:mr-[15px] sm:px-[14px] sm:py-[25px] mt-[20px] sm:mt-[0px] px-[20px] py-[20px]"
+          >
+            <img src="./images/contact/location.png" alt="location" />
+            <h1
+              class="text-[#b66a00] md:text-lg lg:text-lg xl:text-lg 2xl:text-xl font-heading font-semibold"
+            >
+              OFFICE LOCATION
+            </h1>
+            <p class="mt-[20px] font-semibold uppercase text-xs xl:text-sm">
+              1166/2A1, Near SVB
+            </p>
+            <p class="font-semibold text-xs xl:text-sm">
+              TECHPARK,VASANTH NAGAR,
+            </p>
+            <p class="font-semibold uppercase text-xs xl:text-sm">
+              Kalapatti,Coimbatore,
+            </p>
+            <p class="font-semibold uppercase text-xs xl:text-sm">
+              Tamil Nadu 641048
+            </p>
+          </div>
+          <div
+            class="border-0 border-white bg-white sm:w-[30%] w-[210px] md:w-[200px] lg:w-[25%] xl:w-[250px] xl:px-[30px] xl:py-[40px] lg:px-[10px] lg:py-[30px] md:px-[18px] md:py-[25px] md:mr-[20px] sm:mr-[10px] sm:px-[14px] sm:py-[25px] mt-[20px] sm:mt-[0px] px-[20px] py-[20px]"
+          >
+            <img src="./images/contact/clock.png" alt="clock" />
+            <h1
+              class="text-[#b66a00] lg:text-lg 2xl:text-xl font-heading font-semibold"
+            >
+              WORKING HOURS
+            </h1>
+            <p class="mt-[20px] font-semibold uppercase text-xs xl:text-sm">
+              Weekdays – 09:00 to 07:00
+            </p>
+            <p class="font-semibold uppercase mt-[10px] text-xs xl:text-sm">
+              Weekends – 09:00 to 02:00
+            </p>
+          </div>
+          <div
+            class="border-0 border-white bg-white sm:w-[30%] w-[210px] md:w-[200px] lg:w-[25%] xl:w-[250px] xl:px-[30px] xl:py-[40px] lg:px-[10px] lg:py-[30px] md:px-[18px] md:py-[25px] sm:px-[14px] sm:py-[25px] mt-[20px] sm:mt-[0px] px-[20px] py-[20px]"
+          >
+            <img src="./images/contact/communication.png" alt="clock" />
+            <h1
+              class="text-[#b66a00] lg:text-lg 2xl:text-xl font-heading font-semibold"
+            >
+              COMMUNICATIONS
+            </h1>
+            <p class="mt-[20px] font-semibold uppercase text-xs xl:text-sm">
+              +91 12345 67890
+            </p>
+            <p class="font-semibold uppercase mt-[10px] text-xs xl:text-sm">
+              eivaahomess@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--send us message starts-->
+    <div class="mb-10">
+      <div class="flex md:flex-row flex-col">
+        <!-- Left: Image -->
+        <div class="w-full md:w-1/2 h-[400px] md:h-[500px]">
+          <img
+            src="./images/contactusimage.jpeg"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Right: Form -->
+        <div
+          class="bg-white border-4 border-white w-full md:w-1/2 h-[400px] md:h-[500px] flex flex-col items-center justify-center pt-5 md:pt-0"
+        >
+          <h1
+            class="w-[70%] text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-heading"
+          >
+            Send Us a Message
+          </h1>
+
+          <input
+            type="text"
+            placeholder="Name"
+            class="border border-[#7A7A7A] w-[70%] mt-5 py-2 pl-5"
+          />
+          <input
+            type="email"
+            placeholder="Email Id"
+            class="border border-[#7A7A7A] w-[70%] mt-4 py-2 pl-5"
+          />
+          <textarea
+            placeholder="Your Message"
+            rows="4"
+            class="border border-[#7A7A7A] w-[70%] mt-4 py-2 pl-5 resize-none h-[80px]"
+          ></textarea>
+
+          <div class="w-[70%] mt-6">
+            <button class="border border-black w-[100px] py-2 font-bold">
+              SUBMIT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--send us message Ends-->
+
+    <!-- Footer Section Starts-->
+    <footer class="bg-[#061c2b] text-white px-6 md:px-20 pt-12 pb-6">
+      <div class="flex flex-col lg:flex-row justify-between mb-8 gap-8 mt-6">
+        <div class="max-w-md mb-8">
+          <img src="./images/eivaaiconwhite.png" class="mb-4 w-32" />
+          <nav class="flex flex-wrap md:gap-4 text-sm">
+            <a href="#" class="hover:underline mr-6">Home</a>
+            <a href="#" class="hover:underline mr-6">About us</a>
+            <a href="#" class="hover:underline mr-6">Projects</a>
+            <a href="#" class="hover:underline mr-6">Contact us</a>
+          </nav>
+        </div>
+        <div class="max-w-md">
+          <p class="text-gray-300 mb-3">
+            Subscribe to stay tuned for new web design and latest updates. Let's
+            do it!
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="px-4 py-2 text-black w-full sm:w-auto bg-gray-100"
+            />
+            <button class="bg-white text-black px-4 py-2">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-white pt-4 text-sm flex flex-col md:flex-row justify-between items-center gap-2"
+      >
+        <!-- Policy Links -->
+        <div class="flex gap-4 mb-2 md:mb-0">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Legal</a>
+        </div>
+      </div>
+
+      <!-- Copyright + Social in One Row -->
+      <div class="flex items-center justify-between mt-4 text-xs text-gray-300">
+        <p>© 2021 All Rights Reserved</p>
+        <div class="flex gap-3 text-lg text-white ml-4">
+          <!-- <i class="fab fa-facebook-f"></i>
+          <i class="fas fa-paper-plane"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-linkedin-in"></i> -->
+          <img
+            src="./images/socialmedia/facebook-boxed.svg"
+            alt="facebook"
+            class="w-4 h-4"
+          />
+          <img
+            src="./images/socialmedia/instagram.svg"
+            class="w-4 h-4"
+            alt="instagram"
+          />
+          <img
+            src="./images/socialmedia/linkedin.svg"
+            class="w-4 h-4"
+            alt="linkedin"
+          />
+          <img
+            src="./images/socialmedia/twitter.svg"
+            class="w-4 h-4"
+            alt="twitter"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section Ends-->
+  </body>
+</html>
