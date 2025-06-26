@@ -161,7 +161,17 @@
               class="text-xl sm:text-3xl uppercase md:mb-3 mb-1 md:mt-5 font-heading"
               data-aos="fade-up"
             >
-              <a href="./anthara.html">Anthara</a>
+
+
+             <a href="./anthara.html"><div
+              class="text-3xl flex items-center uppercase md:mb-3 mb-1 md:mt-5 font-heading gap-1"
+            >
+              Anthara<img
+                src="images/project/arrow_icon.png"
+                alt="arrow_icon"
+                class="w-4 h-4 mt-[2px]"
+              />
+            </div></a></a>
             </h3>
             <p
               class="md:mb-4 text-justify md:w-5/6 font-paragraph"
@@ -279,6 +289,8 @@
             <p
               class="text-sm uppercase md:pt-5 pt-2 font-paragraph text-justify"
               data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-offset="50"
             >
               Designed to harmonize with nature while offering ultimate comfort,
               this project exemplifies EIVAA HOMESS's dedication to creating
@@ -308,6 +320,8 @@
             <p
               class="text-sm uppercase md:pt-5 pt-2 md:mb-4 mb-8 font-paragraph text-justify"
               data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-offset="50"
             >
               Designed to harmonize with nature while offering ultimate comfort,
               this project exemplifies EIVAA HOMESS's dedication to creating
@@ -318,6 +332,10 @@
       </div>
     </section>
     <!-- Legacy Projects Starts -->
+
+
+
+
 
     <!-- Gallery Section Starts-->
     <section
@@ -581,6 +599,17 @@
       });
     </script>
 
+    <script>
+      const lenis = new Lenis();
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
+
     <!-- AOS JS -->
     <script src="./js/aos.js"></script>
     <script>
@@ -589,5 +618,8 @@
         once: true, // whether animation should happen only once - while scrolling down
       });
     </script>
+
+
+
   </body>
 </html>
