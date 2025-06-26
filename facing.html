@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eivaa Homes</title>
+
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon.png"
+      sizes="180x180"
+    />
+
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans&family=Inria+Serif&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- AOS CSS -->
+    <link href="./js/aos.css" rel="stylesheet" />
+
+    <script src="./js/tailwindbrowser.js"></script>
+
+    <script src="./js/scroll.js"></script>
+    <link href="./custom.css" rel="stylesheet" />
+
+    <link
+      href="./assets/fontawesome-free-6.7.2-web/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-sans bg-[#fdfaf5] scroll-smooth">
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-sm"
+    >
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <a href="#" class="flex items-center space-x-2">
+            <img src="./images/eivaa icon.png" alt="Logo" class="h-10" />
+            <span class="font-semibold tracking-wide hidden">HOMESS</span>
+          </a>
+
+          <!-- Desktop Menu -->
+          <nav
+            class="hidden md:flex items-center text-sm font-medium font-paragraph"
+          >
+            <a href="./index.html" class="hover:text-[#b66a00] px-6">HOME</a>
+            <a href="./aboutus.html" class="hover:text-[#b66a00] px-6"
+              >ABOUT US</a
+            >
+            <a href="./gallery.html" class="hover:text-[#b66a00] px-6"
+              >GALLERY</a
+            >
+            <a href="./project.html" class="text-[#b66a00] px-6">PROJECTS</a>
+            <a href="./contact.html" class="hover:text-[#b66a00] px-6"
+              >CONTACT</a
+            >
+          </nav>
+
+          <!-- Hamburger -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              class="text-gray-800 focus:outline-none text-2xl"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden flex-col space-y-3 pb-4 items-end text-right"
+        >
+          <a href="./index.html" class="block text-sm text-[#b66a00]">HOME</a>
+          <a href="./aboutus.html" class="block text-sm hover:text-[#b66a00]"
+            >ABOUT US</a
+          >
+          <a href="./gallery.html" class="block text-sm hover:text-[#b66a00]"
+            >GALLERY</a
+          >
+          <a href="./project.html" class="block text-sm hover:text-[#b66a00]"
+            >PROJECTS</a
+          >
+          <a href="./contact.html" class="block text-sm hover:text-[#b66a00]"
+            >CONTACT</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!--hero section starts-->
+
+    <div class="relative w-full h-[90vh]">
+      <img
+        src="./images/gallery/galleryimage.jpeg"
+        alt="East Facing"
+        class="w-full h-full object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"
+      ></div>
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-center text-center"
+      >
+        <h1
+          class="font-heading text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl"
+        >
+          EAST FACING
+        </h1>
+        <p
+          class="font-paragraph text-gray-300 mt-4 w-48 sm:w-68 md:w-[400px] lg:w-[500px] xl:w-[30%]"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugiat
+          nemo nulla voluptatibus. Consequatur, suscipit tempora quos, vel modi.
+        </p>
+      </div>
+      <div
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center flex flex-col items-center space-y-2"
+      >
+        <p class="text-white text-sm">SCROLL TO EXPLORE</p>
+        <img
+          src="./images/project/antara/mouse_scroll.png"
+          class="w-[30px] h-[30px] object-cover scroll-bounce"
+        />
+      </div>
+    </div>
+
+    <!--Hero Section Ends-->
+
+    <!--Why East Facing Starts-->
+
+    <div class="px-6 md:px-20 mt-[50px] md:mt-[80px]">
+      <div
+        class="flex flex-col items-center md:items-stretch md:flex md:flex-row"
+      >
+        <div class="md:w-1/2 flex flex-col justify-center 2xl:pr-[100px]">
+          <h1 class="font-heading text-2xl sm:text-2xl md:text-2xl lg:text-3xl">
+            WHY EAST FACING?
+          </h1>
+          <p
+            class="font-paragraph text-[#7A7A7A] mt-[5px] sm:mt-[10px] md:mt-[5px] lg:mt-[10px] text-base md:text-sm lg:text-base"
+          >
+            East-facing homes are considered auspicious and vastu-compliant,
+            welcoming the positive energy of the rising sun.
+          </p>
+          <p
+            class="font-paragraph text-[#7A7A7A] mt-[5px] sm:mt-[10px] md:mt-[5px] lg:mt-[10px]"
+          >
+            Perfect for early risers, spiritual routines, and well-lit living
+            spaces.
+          </p>
+          <h1
+            class="font-heading text-2xl sm:text-2xl md:text-2xl lg:text-3xl mt-[20px] sm:mt-[30px] md:mt-[20px] lg:mt-[40px]"
+          >
+            KEY BENEFITS
+          </h1>
+          <div class="border-2 border-[#B46C06] mt-[10px] pl-[15px] py-[5px]">
+            <p class="font-heading text-lg md:text-base lg:text-lg">
+              Morning Sunlight
+            </p>
+            <p
+              class="font-paragraph text-[#7A7A7A] mt-[5px] sm:mt-[5px] md:mt-[3px] lg:mt-[5px] text-sm sm:text-base md:text-sm lg:text-base"
+            >
+              Bright, energizing interiors from sunrise to noon.
+            </p>
+          </div>
+          <div class="border-2 border-[#B46C06] mt-[5px] pl-[15px] py-[5px]">
+            <p class="font-heading text-lg md:text-base lg:text-lg">
+              Vastu Aligned
+            </p>
+            <p
+              class="font-paragraph text-[#7A7A7A] mt-[5px] sm:mt-[5px] md:mt-[3px] lg:mt-[5px] text-sm sm:text-base md:text-sm lg:text-base"
+            >
+              Ideal placement for spiritual and peaceful living.
+            </p>
+          </div>
+          <div class="border-2 border-[#B46C06] mt-[5px] pl-[15px] py-[5px]">
+            <p class="font-heading text-lg md:text-base lg:text-lg">
+              Garden-Facing Serenity
+            </p>
+            <p
+              class="font-paragraph text-[#7A7A7A] mt-[5px] sm:mt-[5px] md:mt-[3px] lg:mt-[5px] text-sm sm:text-base md:text-sm lg:text-base"
+            >
+              Spacious lawns and front gardens bathed in soft light.
+            </p>
+          </div>
+        </div>
+        <div
+          class="md:w-1/2 md:pl-[20px] lg:pl-[50px] xl:pl-[80px] 2xl:ml-[20px] md:flex md:flex-col md:justify-center lg:justify-start"
+        >
+          <img
+            src="./images/aboutusimage.jpeg"
+            class="mt-[30px] sm:mt-[50px] md:mt-[0px] md:object-cover sm:h-[100%] md:h-[90%] lg:h-[500px] 2xl:w-[95%]"
+          />
+        </div>
+      </div>
+    </div>
+    <!--Why East Facing Ends-->
+
+    <!--Interior Design Starts-->
+
+    <div class="px-6 md:px-10 lg:px-20 mt-[50px] sm:mt-[50px] md:mt-[90px]">
+      <div class="text-center">
+        <h1 class="font-heading text-xl sm:text-2xl md:text-2xl lg:text-3xl">
+          CRAFTED SPACES, DESIGNED FOR COMFORT
+        </h1>
+        <p class="font-paragraph text-[#7A7A7A] mt-[7px] text-sm sm:text-base">
+          Explore the signature spaces of our East Facing Homes — where
+          functionality meets luxury in every corner.
+        </p>
+      </div>
+      <div
+        class="flex flex-col md:flex-row mt-[40px] sm:mt-[40px] md:mt-[50px]"
+      >
+        <div class="md:w-[33%] lg:w-[30%] flex flex-col items-center">
+          <img
+            src="./images/galleryimage1.jpeg"
+            class="sm:h-[330px] md:h-[330px] lg:h-[350px] sm:w-[70%] w-[100%] md:w-full object-cover"
+          />
+        </div>
+        <div
+          class="md:w-[67%] lg:w-[70%] sm:pl-[30px] flex flex-col justify-end mt-[40px] sm:mt-[40px] md:mt-[0px]"
+        >
+          <div>
+            <h1 class="font-heading text-xl sm:text-2xl md:text-xl lg:text-2xl">
+              Master Bedroom
+            </h1>
+            <p
+              class="font-paragraph text-[#7A7A7A] mt-[10px] lg:w-[90%] xl:w-[100%] 2xl:w-[90%] text-sm sm:text-base md:text-sm lg:text-base"
+            >
+              Built by a dedicated in-house interior team, our master bedrooms
+              are insulated for sound, ventilated naturally, and hand-finished
+              with artisanal care
+            </p>
+          </div>
+          <div class="flex justify-between">
+            <div>
+              <div class="mt-[30px] w-[70px]">
+                <h1 class="font-paragraph lg:text-lg">190 sq.ft</h1>
+                <p
+                  class="font-heading text-[#7A7A7A] text-center mt-[5px] text-sm sm:text-base md:text-sm lg:text-base"
+                >
+                  Size
+                </p>
+              </div>
+              <div class="mt-[60px] sm:w-[230px]">
+                <h1 class="font-paragraph lg:text-lg">
+                  Custom-built teakwood with matte gold handles
+                </h1>
+                <p
+                  class="font-heading text-[#7A7A7A] mt-[5px] text-sm sm:text-base md:text-sm lg:text-base"
+                >
+                  Wardrobes
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="mt-[30px] sm:w-[200px]">
+                <h1 class="font-paragraph lg:text-lg">
+                  Italian Marble – Botticino Classico
+                </h1>
+                <p
+                  class="font-heading text-[#7A7A7A] mt-[5px] text-sm sm:text-base md:text-sm lg:text-base"
+                >
+                  Flooring
+                </p>
+              </div>
+              <div class="mt-[35px] sm:w-[220px]">
+                <h1 class="font-paragraph lg:text-lg">
+                  Ambient recessed lighting with reading lamps
+                </h1>
+                <p
+                  class="font-heading text-[#7A7A7A] mt-[5px] text-sm sm:text-base md:text-sm lg:text-base"
+                >
+                  Lighting
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="px-6 md:px-10 lg:px-20 mt-[50px] sm:mt-[50px] md:mt-[90px] mb-10"
+    >
+      <div
+        class="flex flex-col md:flex-row mt-[40px] sm:mt-[40px] md:mt-[50px]"
+      >
+        <div
+          class="md:w-[67%] lg:w-[70%] sm:pl-[30px] flex flex-col justify-end mt-[40px] sm:mt-[40px] md:mt-[0px]"
+        >
+          <div>
+            <h1 class="font-heading text-xl sm:text-2xl md:text-xl lg:text-2xl">
+              Master Bedroom
+            </h1>
+            <p
+              class="font-paragraph text-[#7A7A7A] mt-[10px] lg:w-[90%] xl:w-[100%] 2xl:w-[90%] text-sm sm:text-base md:text-sm lg:text-base"
+            >
+              Built by a dedicated in-house interior team, our master bedrooms
+              are insulated for sound, ventilated naturally, and hand-finished
+              with artisanal care
+            </p>
+          </div>
+          <div class="flex justify-between">
+            <div>
+              <div class="mt-[30px] w-[70px]">
+                <h1 class="font-paragraph lg:text-lg">190 sq.ft</h1>
+                <p
+                  class="font-heading text-[#7A7A7A] text-center mt-[5px] text-sm sm:text-base md:text-sm lg:text-base"
+                >
+                  Size
+                </p>
+              </div>
+              <div class="mt-[60px] sm:w-[230px]">
+                <h1 class="font-paragraph lg:text-lg">
+                  Custom-built teakwood with matte gold handles
+                </h1>
+                <p
+                  class="font-heading text-[#7A7A7A] mt-[5px] text-sm sm:text-base md:text-sm lg:text-base"
+                >
+                  Wardrobes
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="mt-[30px] sm:w-[200px]">
+                <h1 class="font-paragraph lg:text-lg">
+                  Italian Marble – Botticino Classico
+                </h1>
+                <p
+                  class="font-heading text-[#7A7A7A] mt-[5px] text-sm sm:text-base md:text-sm lg:text-base"
+                >
+                  Flooring
+                </p>
+              </div>
+              <div class="mt-[35px] sm:w-[220px]">
+                <h1 class="font-paragraph lg:text-lg">
+                  Ambient recessed lighting with reading lamps
+                </h1>
+                <p
+                  class="font-heading text-[#7A7A7A] mt-[5px] text-sm sm:text-base md:text-sm lg:text-base"
+                >
+                  Lighting
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-[33%] lg:w-[30%] flex flex-col items-center">
+          <img
+            src="./images/galleryimage1.jpeg"
+            class="sm:h-[330px] md:h-[330px] lg:h-[350px] sm:w-[70%] w-[100%] md:w-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Section Starts-->
+    <section
+      class="bg-[#071e2e] text-white py-12 px-6 overflow-hidden pb-8 md:pb-28"
+    >
+      <!-- Heading Row (only for md and up) -->
+      <div
+        class="hidden md:flex flex-wrap justify-between items-center mb-6 p-10"
+      >
+        <h2 class="text-xl md:text-4xl font-medium font-heading leading-tight">
+          FEEL THE <span class="text-yellow-600">LUXURY</span><br />FROM OUR
+          GALLERY
+        </h2>
+        <a
+          href="#"
+          class="border border-white px-4 py-2 hover:bg-white hover:text-[#071e2e] transition font-paragraph"
+        >
+          VIEW ALL
+        </a>
+      </div>
+
+      <!-- Heading Row for small screens only -->
+      <div class="flex md:hidden flex-col mb-4">
+        <h2 class="text-xl font-medium font-heading leading-tight">
+          FEEL THE <span class="text-yellow-600">LUXURY</span><br />FROM OUR
+          GALLERY
+        </h2>
+      </div>
+
+      <!-- Scrolling Container -->
+      <div class="relative overflow-hidden">
+        <div class="scroll-track flex gap-5 w-max">
+          <!-- Group 1 -->
+          <img
+            class="w-72 object-cover"
+            src="./images/gallery/gallery_1.jpeg"
+          />
+          <img
+            class="w-72 object-cover"
+            src="./images/gallery/gallery_2.jpeg"
+          />
+          <img
+            class="w-72 object-cover"
+            src="./images/gallery/gallery_3.jpeg"
+          />
+          <img
+            class="w-72 object-cover"
+            src="./images/gallery/gallery_4.jpeg"
+          />
+          <img
+            class="w-72 object-cover"
+            src="../images/gallery/gallery_5.jpeg"
+          />
+
+          <!-- Group 2 -->
+          <img
+            class="w-72 object-cover"
+            src="../images/gallery/gallery_6.jpeg"
+          />
+          <img
+            class="w-72 object-cover"
+            src="../images/gallery/gallery_7.jpeg"
+          />
+          <img
+            class="w-72 object-cover"
+            src="./images/gallery/gallery_8.jpeg"
+          />
+          <img
+            class="w-72 object-cover"
+            src="./images/gallery/gallery_9.jpeg"
+          />
+          <img
+            class="w-72 object-cover"
+            src="./images/gallery/gallery_10.jpeg"
+          />
+        </div>
+      </div>
+
+      <!-- Bottom "View All" for small screens only -->
+      <div class="md:hidden flex justify-end mt-6 pr-0 md:pr-6">
+        <a
+          href="#"
+          class="border border-white px-4 py-2 hover:bg-white hover:text-black transition text-sm md:hidden font-paragraph"
+        >
+          VIEW ALL
+        </a>
+      </div>
+    </section>
+
+    <!-- Animation Style -->
+    <style>
+      @keyframes scrollGallery {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .scroll-track {
+        animation: scrollGallery 30s linear infinite;
+      }
+    </style>
+
+    <!-- Contact Section Starts-->
+    <section class="flex flex-col lg:flex-row w-full min-h-screen">
+      <!-- Left: Background Image with Blurred Overlay Form -->
+      <div class="relative w-full lg:w-1/2 h-[500px] lg:h-auto overflow-hidden">
+        <!-- Background as image -->
+        <div
+          class="absolute inset-0 bg-[url('./images/contactusimage.jpeg')] bg-cover bg-center"
+        ></div>
+
+        <!-- Blurred Form Overlay -->
+        <div
+          class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center"
+        >
+          <form class="text-white p-10 w-full max-w-md font-paragraph">
+            <h2 class="text-3xl font-heading font-semibold mb-6">Enquire</h2>
+            <input
+              type="text"
+              placeholder="Name"
+              class="w-full mb-4 px-4 py-2 bg-transparent border border-white placeholder-white text-white outline-none"
+            />
+            <input
+              type="email"
+              placeholder="Email Id"
+              class="w-full mb-4 px-4 py-2 bg-transparent border border-white placeholder-white text-white outline-none"
+            />
+            <textarea
+              placeholder="Your Message"
+              rows="4"
+              class="w-full mb-4 px-4 py-2 bg-transparent border border-white placeholder-white text-white outline-none resize-none"
+            ></textarea>
+            <button
+              type="submit"
+              class="border border-white px-6 py-2 uppercase text-sm hover:bg-white hover:text-black transition"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="w-full lg:w-1/2 bg-white p-10 flex flex-col justify-center font-paragraph"
+      >
+        <h2 class="text-3xl font-medium font-heading mb-2">Contact Us</h2>
+        <p class="text-gray-600 mb-2 md:mb-6">
+          Get in touch with us for any queries and suggestions
+        </p>
+        <div
+          class="flex flex-col md:flex-row gap-3 md:gap-10 mb-6 mt-2 md:mt-12"
+        >
+          <div>
+            <h4 class="font-semibold text-lg mb-1 text-gray-500">
+              General queries
+            </h4>
+            <p>+91 12345 67890<br />Evaahomess@gmail.com</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg mb-1 text-gray-500">Careers</h4>
+            <p>Evaahomess@gmail.com</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-4">
+          <iframe
+            class="w-full md:w-48 h-28 border-none"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.469175989888!2d76.98089431533403!3d11.018982892142469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857e2a9eb9ed5%3A0x30596d1e20db5b85!2sCoimbatore%2C%20Tamil%20Nadu%20641048!5e0!3m2!1sen!2sin!4v1610000000000!5m2!1sen!2sin"
+            loading="lazy"
+          ></iframe>
+          <p class="text-sm">
+            1166/2A1, EVAHA HOMESS, Kurumbapalayam Road, Kalapatti,<br />
+            Coimbatore - 641 048
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section Ends-->
+
+    <!-- Footer Section Starts-->
+    <footer class="bg-[#061c2b] text-white px-6 md:px-20 pt-12 pb-6">
+      <div class="flex flex-col lg:flex-row justify-between mb-8 gap-8 mt-6">
+        <div class="max-w-md mb-8">
+          <img src="./images/eivaaiconwhite.png" class="mb-4 w-32" />
+          <nav class="flex flex-wrap md:gap-4 text-sm">
+            <a href="#" class="hover:underline mr-6">Home</a>
+            <a href="#" class="hover:underline mr-6">About us</a>
+            <a href="#" class="hover:underline mr-6">Projects</a>
+            <a href="#" class="hover:underline mr-6">Contact us</a>
+          </nav>
+        </div>
+        <div class="max-w-md">
+          <p class="text-gray-300 mb-3">
+            Subscribe to stay tuned for new web design and latest updates. Let's
+            do it!
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="px-4 py-2 text-black w-full sm:w-auto bg-gray-100"
+            />
+            <button class="bg-white text-black px-4 py-2">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-white pt-4 text-sm flex flex-col md:flex-row justify-between items-center gap-2"
+      >
+        <!-- Policy Links -->
+        <div class="flex gap-4 mb-2 md:mb-0">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Legal</a>
+        </div>
+      </div>
+
+      <!-- Copyright + Social in One Row -->
+      <div class="flex items-center justify-between mt-4 text-xs text-gray-300">
+        <p>© 2021 All Rights Reserved</p>
+        <div class="flex gap-3 text-lg text-white ml-4">
+          <!-- <i class="fab fa-facebook-f"></i>
+          <i class="fas fa-paper-plane"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-linkedin-in"></i> -->
+          <img
+            src="./images/socialmedia/facebook-boxed.svg"
+            alt="facebook"
+            class="w-4 h-4"
+          />
+          <img
+            src="./images/socialmedia/instagram.svg"
+            class="w-4 h-4"
+            alt="instagram"
+          />
+          <img
+            src="./images/socialmedia/linkedin.svg"
+            class="w-4 h-4"
+            alt="linkedin"
+          />
+          <img
+            src="./images/socialmedia/twitter.svg"
+            class="w-4 h-4"
+            alt="twitter"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section Ends-->
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <script>
+      const lenis = new Lenis();
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
+
+    <!-- AOS JS -->
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
+  </body>
+</html>

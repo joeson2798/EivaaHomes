@@ -85,7 +85,9 @@
           id="mobile-menu"
           class="md:hidden hidden flex-col space-y-3 pb-4 items-end text-right"
         >
-          <a href="./index.html" class="block text-sm text-[#b66a00]">HOME</a>
+          <a href="./index.html" class="block text-sm hover:text-[#b66a00]"
+            >HOME</a
+          >
           <a href="./aboutus.html" class="block text-sm hover:text-[#b66a00]"
             >ABOUT US</a
           >
@@ -95,7 +97,7 @@
           <a href="./project.html" class="block text-sm hover:text-[#b66a00]"
             >PROJECTS</a
           >
-          <a href="#" class="block text-sm hover:text-[#b66a00]">CONTACT</a>
+          <a href="#" class="block text-sm text-[#b66a00]">CONTACT</a>
         </div>
       </div>
     </header>
@@ -337,6 +339,16 @@
       </div>
     </footer>
     <!-- Footer Section Ends-->
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
 
     <!-- AOS JS -->
     <script src="./js/aos.js"></script>
