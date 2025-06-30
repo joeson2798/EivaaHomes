@@ -110,7 +110,7 @@
 
 
 
-  /* Home page Contact section form padding */
+  /* Home page Contact section form padding  Starts*/
 
   @media (min-width: 1024px) and (max-width: 1200px) {
 
@@ -118,4 +118,130 @@
       padding: 20px;
     }
 
+}
+/* Home page Contact section form padding  Ends*/
+
+
+
+
+
+
+
+
+  .timeline-text {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1), transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+.timeline-text.fade-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (min-width:1841px) and (max-width: 2100px) {
+  .firstsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .secondsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .thirdsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media (min-width:1700px) and (max-width:1841px){
+  .firstsection{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .secondsection{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .thirdsection{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+@media (min-width:1440px) and (max-width:1535px){
+  .firstsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .secondsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .thirdsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media (min-width:1191px) and (max-width: 1279px){
+  .firstsection{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .secondsection{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .thirdsection{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (min-width:1130px) and (max-width:1190px) {
+  .firstsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .secondsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .thirdsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media (min-width:981px) and (max-width:1023px){
+  .firstsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .secondsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .thirdsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media (min-width:930px) and (max-width:980px){
+  .firstsection{
+    padding-left: 3%;
+    padding-right: 4%;
+  }
+  .secondsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .thirdsection{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media (min-width:410px) and (max-width:501px){
+  .getin{
+    width: 88% !important;
+  }
+}
+@media (min-width:501px) and (max-width:640px){
+  .getin{
+    width:90%;
+  }
 }

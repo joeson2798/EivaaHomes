@@ -143,6 +143,7 @@
     </section>
 
     <!-- Project Overview Section -->
+    <!-- Project Overview Section -->
     <section
       class="py-20 px-4 md:px-20 relative hidden md:block overflow-hidden overflow-x-hidden"
     >
@@ -639,7 +640,7 @@
       </div>
     </section>
 
-    <!--horizontal Scroll Section START -->
+    <!-- Horizontal Scroll Section START -->
     <div id="horizontal-scroll-container" class="relative h-[400vh]">
       <!-- Pin Element -->
       <section
@@ -718,7 +719,7 @@
           <!-- Slide 3 -->
           <div class="w-screen h-screen flex-shrink-0 relative">
             <img
-              src="./images/gallery/gallery_2.jpeg"
+              src="./images/project/antara/garden.jpeg"
               alt="plots"
               class="absolute inset-0 w-full h-full object-cover"
             />
@@ -774,7 +775,7 @@
     </div>
     <!-- Horizontal Scroll Section END -->
 
-    <div class="ml-[25px] sm:ml-[30px] md:ml-[40px] lg:ml-[70px] mt-[20px]">
+    <div class="ml-[25px] sm:ml-[30px] md:ml-[40px] lg:ml-[70px] mt-5 lg:mt-10">
       <div>
         <h2 class="font-heading font-semibold text-lg sm:text-xl md:text-2xl">
           Conveniences Just Around the Corner
@@ -907,7 +908,7 @@
       );
 
       let isDown = false;
-      let startX;
+      var startX;
       let scrollLeft;
 
       scrollContainer.addEventListener("mousedown", (e) => {
@@ -937,7 +938,8 @@
     </script>
 
     <!-- stepper bar Section starts -->
-    <div class="px-6 md:px-10 lg:px-20 mt-[70px] timeline-container">
+
+    <div class="px-6 md:px-10 lg:px-20 mt-[70px] timeline-container md:mb-20">
       <div class="flex flex-col md:flex-row timeline-section">
         <!-- Left: Title -->
         <div
@@ -961,7 +963,7 @@
             <!-- First circle -->
             <div id="timeline-circle-1" class="relative z-10">
               <div
-                class="w-4 h-4 rounded-full bg-gray-900 border-2 border-gray-900 transition-colors duration-300"
+                class="w-4 h-4 rounded-full bg-white border-2 border-gray-400 transition-colors duration-300"
               ></div>
             </div>
             <div
@@ -995,28 +997,28 @@
 
           <!-- Timeline content -->
           <div class="flex flex-col justify-between w-full">
-            <div>
+            <div class="timeline-text">
               <p class="font-heading text-lg">Foundation – Completed</p>
               <p class="font-paragraph text-[#7A7A7A] lg:w-[600px] mt-[5px]">
                 Ground excavation, structural base pour, and early-stage
                 underground piping completed with precision.
               </p>
             </div>
-            <div class="mt-[20px]">
+            <div class="timeline-text mt-[20px]">
               <p class="font-heading text-lg">Framing – Completed</p>
               <p class="font-paragraph text-[#7A7A7A]">
                 Steel and concrete frames installed; outer walls and
                 load-bearing sections in place.
               </p>
             </div>
-            <div class="mt-[20px] md:mt-[20px] lg:mt-[30px]">
+            <div class="timeline-text mt-[20px] md:mt-[20px] lg:mt-[30px]">
               <p class="font-heading text-lg">Interiors – In Progress</p>
               <p class="font-paragraph text-[#7A7A7A]">
                 Interior fittings, floor finishes, kitchen worktops, and
                 lighting frameworks underway.
               </p>
             </div>
-            <div class="mt-[20px] md:mt-[20px] lg:mt-[30px]">
+            <div class="timeline-text mt-[20px] md:mt-[20px] lg:mt-[30px]">
               <p class="font-heading text-lg">Finishing – Upcoming</p>
               <p class="font-paragraph text-[#7A7A7A]">
                 Final coat of paint, landscaping, fixture fitting, and quality
@@ -1100,46 +1102,136 @@
         </div>
       </div>
     </footer>
-
     <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        AOS.init({
-          duration: 1500,
-          easing: "ease-in-out",
-          once: false,
-        });
+      AOS.init({
+        duration: 1500,
+        once: true,
+      });
+    </script>
 
-        const title = document.getElementById("clubhouse-title");
-        const desc = document.getElementById("clubhouse-desc");
+    <!-- Horizontal Scroll-->
+    <script>
+      const container = document.getElementById("horizontal-scroll-container");
+      const section = document.getElementById("horizontal-scroll-section");
+      const wrapper = document.getElementById("horizontal-scroll-wrapper");
+      const totalSlides = wrapper.children.length;
 
-        // Store original content
-        const originalTitle = title.textContent;
-        const originalDesc = desc.textContent;
+      let scrollIndex = 0;
+      let isScrolling = false;
 
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                title.textContent = "Multi-purpose";
-                desc.textContent =
-                  "This updated space now includes enhanced facilities and comfort for your lifestyle.";
-              } else {
-                // Revert to original when out of view
-                title.textContent = originalTitle;
-                desc.textContent = originalDesc;
-              }
-            });
-          },
-          {
-            threshold: 0.3, // Trigger when 90% visible
+      // Mouse + Touch drag
+      let isDragging = false;
+      var startX = 0;
+      let currentTranslate = 0;
+      let prevTranslate = 0;
+      let animationID;
+      let currentIndex = 0;
+
+      const setWrapperTransform = (translateX, smooth = true) => {
+        wrapper.style.transition = smooth ? "transform 0.6s ease" : "none";
+        wrapper.style.transform = `translateX(${translateX}px)`;
+      };
+
+      // Mouse Wheel Scroll
+      section.addEventListener(
+        "wheel",
+        (e) => {
+          const containerTop = container.offsetTop;
+          const scrollY = window.scrollY;
+          const screenH = window.innerHeight;
+
+          if (
+            scrollY >= containerTop &&
+            scrollY <= containerTop + screenH * (totalSlides - 1)
+          ) {
+            e.preventDefault();
+            if (isScrolling) return;
+
+            const delta = e.deltaY;
+            if (delta > 0 && scrollIndex < totalSlides - 1) {
+              scrollIndex++;
+            } else if (delta < 0 && scrollIndex > 0) {
+              scrollIndex--;
+            }
+
+            wrapper.style.transition = "transform 0.6s ease";
+            wrapper.style.transform = `translateX(-${scrollIndex * 100}vw)`;
+
+            isScrolling = true;
+            setTimeout(() => {
+              isScrolling = false;
+            }, 700);
           }
-        );
+        },
+        { passive: false }
+      );
 
-        const target = document.getElementById("img-wrapper");
-        if (target) {
-          observer.observe(target);
+      // Vertical scroll to horizontal fallback
+      window.addEventListener("scroll", () => {
+        const containerTop = container.offsetTop;
+        const scrollY = window.scrollY;
+        const screenH = window.innerHeight;
+        const totalScrollableHeight = screenH * totalSlides;
+
+        if (
+          scrollY >= containerTop &&
+          scrollY <= containerTop + totalScrollableHeight
+        ) {
+          const scrollPos = scrollY - containerTop;
+          const percent = Math.min(
+            scrollPos / (screenH * (totalSlides - 1)),
+            1
+          );
+          wrapper.style.transition = "none";
+          wrapper.style.transform = `translateX(-${
+            percent * (100 * (totalSlides - 1))
+          }vw)`;
         }
       });
+
+      const getPositionX = (e) =>
+        e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
+
+      const dragStart = (e) => {
+        isDragging = true;
+        startX = getPositionX(e);
+        wrapper.style.transition = "none";
+        prevTranslate = -scrollIndex * window.innerWidth;
+      };
+
+      const dragMove = (e) => {
+        if (!isDragging) return;
+        const currentX = getPositionX(e);
+        const deltaX = currentX - startX;
+        currentTranslate = prevTranslate + deltaX;
+
+        const maxTranslate = 0;
+        const minTranslate = -((totalSlides - 1) * window.innerWidth);
+        currentTranslate = Math.min(
+          maxTranslate,
+          Math.max(minTranslate, currentTranslate)
+        );
+        setWrapperTransform(currentTranslate, false);
+      };
+
+      const dragEnd = () => {
+        isDragging = false;
+        const movedBy = currentTranslate - prevTranslate;
+
+        if (movedBy < -100 && scrollIndex < totalSlides - 1) scrollIndex++;
+        if (movedBy > 100 && scrollIndex > 0) scrollIndex--;
+
+        setWrapperTransform(-scrollIndex * window.innerWidth);
+      };
+
+      wrapper.addEventListener("mousedown", dragStart);
+      wrapper.addEventListener("mousemove", dragMove);
+      wrapper.addEventListener("mouseup", dragEnd);
+      wrapper.addEventListener("mouseleave", () => isDragging && dragEnd());
+
+      wrapper.addEventListener("touchstart", dragStart, { passive: true });
+      wrapper.addEventListener("touchmove", dragMove, { passive: true });
+      wrapper.addEventListener("touchend", dragEnd);
     </script>
 
     <script>
@@ -1172,13 +1264,14 @@
           document.querySelector("#timeline-circle-3 div"),
           document.querySelector("#timeline-circle-4 div"),
         ];
+        const timelineTexts = document.querySelectorAll(".timeline-text");
 
         let isTimelineActive = false;
         let scrollLocked = false;
         let lastTimelineScrollY = window.scrollY;
         let animationInProgress = false;
-        let hasAnimated = false; // Track if animation already happened
-        let wasInCenter = false; // Track if section was in center before
+        let hasAnimated = false;
+        let wasInCenter = false;
 
         function updateSingleCircle(index, filled) {
           const circle = circles[index];
@@ -1193,38 +1286,42 @@
 
         function staggeredFillAnimation() {
           animationInProgress = true;
-          hasAnimated = true; // Mark as animated
+          hasAnimated = true;
 
-          // Reset all to unfilled first
+          // Reset all to unfilled and hide texts
           circles.forEach((circle, i) => updateSingleCircle(i, false));
+          timelineTexts.forEach((text) => text.classList.remove("fade-up"));
 
-          // Fill one by one with delay
           circles.forEach((circle, i) => {
             setTimeout(() => {
               updateSingleCircle(i, true);
+              // Fade up corresponding text
+              timelineTexts[i].classList.add("fade-up");
               if (i === circles.length - 1) {
                 animationInProgress = false;
               }
-            }, i * 300);
+            }, i * 500);
           });
         }
 
         function staggeredUnfillAnimation() {
           animationInProgress = true;
-          hasAnimated = true; // Mark as animated
+          hasAnimated = true;
 
-          // Start with all filled
+          // Start with all filled and texts visible
           circles.forEach((circle, i) => updateSingleCircle(i, true));
+          timelineTexts.forEach((text) => text.classList.add("fade-up"));
 
-          // Unfill one by one with delay (reverse order)
           circles.forEach((circle, i) => {
             const reverseIndex = circles.length - 1 - i;
             setTimeout(() => {
               updateSingleCircle(reverseIndex, false);
+              // Hide corresponding text
+              timelineTexts[reverseIndex].classList.remove("fade-up");
               if (i === circles.length - 1) {
                 animationInProgress = false;
               }
-            }, i * 300);
+            }, i * 500);
           });
         }
 
@@ -1314,11 +1411,18 @@
             "background-color 0.3s ease, border-color 0.3s ease";
         });
 
-        // Set initial state - only first circle filled
+        // Set initial state - only first circle filled, only first text visible
         updateSingleCircle(0, true);
         circles
           .slice(1)
           .forEach((circle, i) => updateSingleCircle(i + 1, false));
+        timelineTexts.forEach((text, i) => {
+          if (i === 0) {
+            text.classList.add("fade-up");
+          } else {
+            text.classList.remove("fade-up");
+          }
+        });
       });
     </script>
   </body>
