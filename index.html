@@ -29,6 +29,8 @@
     <!-- AOS CSS -->
     <link href="./js/aos.css" rel="stylesheet" />
 
+    <link href="./custom.css" rel="stylesheet" />
+
     <script src="./js/tailwindbrowser.js"></script>
 
     <script src="./js/scroll.js"></script>
@@ -37,6 +39,32 @@
       href="./assets/fontawesome-free-6.7.2-web/css/all.min.css"
       rel="stylesheet"
     />
+    <style>
+      .digit {
+        display: inline-block;
+        height: 1.25em;
+        overflow: hidden;
+        width: auto;
+      }
+
+      .digit-inner {
+        transition: transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+
+      .digit-inner div {
+        height: 1.25em;
+        line-height: 1.25em;
+        text-align: center;
+        font-feature-settings: "tnum";
+      }
+
+      .number-ticker {
+        letter-spacing: 0;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+      }
+    </style>
   </head>
   <body class="font-sans bg-[#fdfaf5] scroll-smooth">
     <!-- Header -->
@@ -139,7 +167,7 @@
             reflect comfort, quality, and a lasting promise of value.
           </p>
           <a
-            href="#"
+            href="#contact"
             class="border border-white text-white text-sm md:text-base md:mb-8 px-4 md:px-5 py-1.5 md:py-2 inline-block hover:bg-white hover:text-black transition"
           >
             ENQUIRE NOW
@@ -193,7 +221,7 @@
                 communication and consistent delivery.
               </p>
               <a
-                href="#"
+                href="./aboutus.html"
                 class="mt-4 inline-block text-yellow-700 border border-yellow-700 px-4 py-2 text-sm uppercase hover:bg-yellow-700 hover:text-white transition"
               >
                 KNOW MORE
@@ -211,35 +239,47 @@
         class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 text-center gap-8"
       >
         <div>
-          <h2 class="text-5xl font-bold text-gray-800 counter" data-target="15">
-            0
-          </h2>
-          <p class="text-lg mt-2">Years of experience</p>
+          <div
+            class="number-ticker text-5xl font-bold text-gray-800"
+            data-value="15"
+          >
+            <div class="digit">
+              <div class="digit-inner"><div>0</div></div>
+            </div>
+          </div>
+          <p class="text-xl mt-2 font-paragraph">Years of experience</p>
         </div>
+
         <div
           class="border-t md:border-t-0 md:border-l border-gray-300 pt-6 md:pt-0"
         >
-          <h2
-            class="text-5xl font-bold text-gray-800 counter"
-            data-target="250"
+          <div
+            class="number-ticker text-5xl font-bold text-gray-800"
+            data-value="250"
           >
-            0
-          </h2>
-          <p class="text-lg mt-2">Projects completed</p>
+            <div class="digit">
+              <div class="digit-inner"><div>0</div></div>
+            </div>
+          </div>
+          <p class="text-xl mt-2 font-paragraph">Projects completed</p>
         </div>
+
         <div
           class="border-t md:border-t-0 md:border-l border-gray-300 pt-6 md:pt-0"
         >
-          <h2
-            class="text-5xl font-bold text-gray-800 counter"
-            data-target="120"
+          <div
+            class="number-ticker text-5xl font-bold text-gray-800"
+            data-value="120"
           >
-            0
-          </h2>
-          <p class="text-lg mt-2">Happy customers</p>
+            <div class="digit">
+              <div class="digit-inner font-heading"><div>0</div></div>
+            </div>
+          </div>
+          <p class="text-xl mt-2 font-paragraph">Happy customers</p>
         </div>
       </div>
     </section>
+
     <!-- Counter Section End-->
 
     <!-- Project Section starts-->
@@ -251,7 +291,7 @@
         <div class="hidden md:flex justify-between items-center mb-6">
           <h2 class="text-3xl md:text-3xl uppercase font-heading">Projects</h2>
           <a
-            href="#"
+            href="./project.html"
             class="border border-white px-4 py-2 hover:bg-white hover:text-black transition"
             >VIEW ALL</a
           >
@@ -283,7 +323,7 @@
 
           <!-- View All Button: right side -->
           <a
-            href="#"
+            href="./project.html"
             class="border border-white px-4 py-2 hover:bg-white hover:text-black transition text-sm md:hidden"
           >
             VIEW ALL
@@ -475,7 +515,7 @@
     </style>
 
     <!-- Contact Section Starts-->
-    <section class="flex flex-col lg:flex-row w-full min-h-screen">
+    <section class="flex flex-col lg:flex-row w-full min-h-screen" id="contact">
       <!-- Left: Background Image with Blurred Overlay Form -->
       <div class="relative w-full lg:w-1/2 h-[500px] lg:h-auto overflow-hidden">
         <!-- Background as image -->
@@ -487,7 +527,10 @@
         <div
           class="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center"
         >
-          <form class="text-white p-10 w-full max-w-md font-paragraph">
+          <form
+            class="text-white p-10 md:p-0 lg:p-0 w-full max-w-xl font-paragraph"
+            id="contactform"
+          >
             <h2 class="text-3xl font-heading font-semibold mb-6">Enquire</h2>
             <input
               type="text"
@@ -556,9 +599,9 @@
           <img src="./images/eivaaiconwhite.png" class="mb-4 w-32" />
           <nav class="flex flex-wrap md:gap-4 text-sm">
             <a href="#" class="hover:underline mr-6">Home</a>
-            <a href="#" class="hover:underline mr-6">About us</a>
-            <a href="#" class="hover:underline mr-6">Projects</a>
-            <a href="#" class="hover:underline mr-6">Contact us</a>
+            <a href="./aboutus.html" class="hover:underline mr-6">About us</a>
+            <a href="./project.html" class="hover:underline mr-6">Projects</a>
+            <a href="./contact.html" class="hover:underline mr-6">Contact us</a>
           </nav>
         </div>
         <div class="max-w-md">
@@ -792,6 +835,66 @@
       function truncateText(text, limit) {
         return text.length > limit ? text.substring(0, limit) + "..." : text;
       }
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll(".number-ticker");
+        let animated = false;
+
+        function createDigitScroller(digit) {
+          const wrapper = document.createElement("div");
+          wrapper.className = "digit";
+
+          const inner = document.createElement("div");
+          inner.className = "digit-inner";
+
+          // Create 0–9 for scrolling effect
+          for (let i = 0; i <= 9; i++) {
+            const d = document.createElement("div");
+            d.textContent = i;
+            inner.appendChild(d);
+          }
+
+          wrapper.appendChild(inner);
+          return { wrapper, inner, digit };
+        }
+
+        function animateCounter(el, value) {
+          const digits = value.toString().split("");
+          el.innerHTML = "";
+
+          digits.forEach((digit) => {
+            const { wrapper, inner } = createDigitScroller(digit);
+            el.appendChild(wrapper);
+
+            setTimeout(() => {
+              inner.style.transform = `translateY(-${digit * 1.25}em)`;
+            }, 100);
+          });
+        }
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting && !animated) {
+                setTimeout(() => {
+                  counters.forEach((counter) => {
+                    const finalVal = counter.getAttribute("data-value");
+                    animateCounter(counter, finalVal);
+                  });
+                  animated = true;
+                  observer.disconnect();
+                }, 300);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        const section = document.querySelector(".counter-section");
+        observer.observe(section);
+      });
     </script>
   </body>
 </html>

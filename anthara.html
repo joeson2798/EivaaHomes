@@ -382,7 +382,7 @@
           <!-- Button -->
           <a href="./facing.html">
             <button
-              class="mt-5 lg:mt-10 px-8 py-1 border border-white hover:bg-white hover:text-black transition-all text-xs md:text-sm lg:text-lg font-heading font-medium"
+              class="mt-5 lg:mt-10 px-8 py-1 border border-white hover:bg-white hover:text-black transition-all text-xs md:text-sm lg:text-lg font-heading font-medium cursor-pointer"
             >
               Explore
             </button></a
@@ -452,11 +452,13 @@
           </div>
 
           <!-- Button -->
-          <button
-            class="mt-5 lg:mt-10 px-8 py-1 border border-white hover:bg-white hover:text-black transition-all text-xs md:text-sm lg:text-lg font-heading font-medium"
-          >
-            Explore
-          </button>
+          <a href="./facing.html">
+            <button
+              class="mt-5 lg:mt-10 px-8 py-1 border border-white hover:bg-white hover:text-black transition-all text-xs md:text-sm lg:text-lg font-heading font-medium cursor-pointer"
+            >
+              Explore
+            </button>
+          </a>
         </div>
         <div>
           <img
@@ -544,11 +546,13 @@
           </div>
 
           <!-- Button -->
-          <button
-            class="mt-5 lg:mt-10 px-8 py-1 border border-white hover:bg-white hover:text-black transition-all text-xs md:text-sm lg:text-lg font-heading font-medium"
+          <a href="./facing.html">
+            <button
+              class="mt-5 lg:mt-10 px-8 py-1 border border-white hover:bg-white hover:text-black transition-all text-xs md:text-sm lg:text-lg font-heading font-medium cursor-pointer"
+            >
+              Explore
+            </button></a
           >
-            Explore
-          </button>
         </div>
       </div>
 
@@ -614,11 +618,13 @@
           </div>
 
           <!-- Button -->
-          <button
-            class="mt-5 lg:mt-10 px-8 py-1 border border-white hover:bg-white hover:text-black transition-all text-xs md:text-sm lg:text-lg font-heading font-medium"
+          <a href="./facing.html">
+            <button
+              class="mt-5 lg:mt-10 px-8 py-1 border border-white hover:bg-white hover:text-black transition-all text-xs md:text-sm lg:text-lg font-heading font-medium cursor-pointer"
+            >
+              Explore
+            </button></a
           >
-            Explore
-          </button>
         </div>
         <div>
           <img
@@ -633,66 +639,140 @@
       </div>
     </section>
 
-    <section
-      class="relative h-[450px] md:h-screen text-white overflow-hidden"
-      id="amenities"
-    >
-      <!-- Static Background Image -->
-      <img
-        src="./images/project/antara/pool_table_ball_hall_1.png"
-        alt="pool_table_ball.jpg"
-        class="absolute top-0 left-0 w-full h-[450px] md:h-full object-cover brightness-[.55] z-0"
-      />
-
-      <!-- Slide Image From Right -->
-      <div
-        id="img-wrapper"
-        data-aos="slide-left"
-        data-aos-delay="1500"
-        class="absolute top-0 left-0 w-full h-[450px] md:h-full z-10 overflow-hidden"
+    <!--horizontal Scroll Section START -->
+    <div id="horizontal-scroll-container" class="relative h-[400vh]">
+      <!-- Pin Element -->
+      <section
+        id="horizontal-scroll-section"
+        class="sticky top-0 overflow-hidden bg-black text-white"
       >
-        <img
-          id="img-right"
-          src="./images/project/antara/pool_table_ball_hall_2.png"
-          alt="pool_table_ball1.jpg"
-          class="w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Overlay content -->
-      <div
-        class="absolute inset-0 z-20 px-6 md:px-16 md:py-10 flex flex-col md:justify-between bg-gradient-to-b from-black/40 to-black/60"
-      >
-        <!-- Top Heading -->
-        <div class="text-center mt-4 sm:mt-6">
-          <h2
-            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold font-heading"
+        <div
+          class="absolute w-full top-30 sm:top-20 md:top-30 lg:top-30 xl:top-30 left-1/2 transform -translate-x-1/2 text-center z-10"
+        >
+          <h1
+            class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold font-heading"
           >
             Amenities That Elevate Living
-          </h2>
+          </h1>
         </div>
 
-        <!-- Bottom Left Caption -->
         <div
-          class="max-w-xl text-center sm:text-left mb-4 sm:mb-0 py-20 mt-20 pt-25 md:py-0 md:mb-5 md:pb-5"
-          id="changeText"
+          id="horizontal-scroll-wrapper"
+          class="flex cursor-grab select-none active:cursor-grabbing h-screen w-[400vw] transition-transform duration-700 ease-in-out will-change-transform"
         >
-          <h3
-            id="clubhouse-title"
-            class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-2 font-heading pt-12 mt-14 md:pt-0 md:mt-0"
-          >
-            Multi-purpose Clubhouse
-          </h3>
-          <p
-            id="clubhouse-desc"
-            class="text-xs sm:text-base md:text-xl lg:text-2xl text-gray-300 font-paragraph lg:w-[750px]"
-          >
-            A luxurious community space equipped for events, fitness, indoor
-            games, and social gatherings.
-          </p>
+          <!-- Slide 1 -->
+          <div class="w-screen h-screen flex-shrink-0 relative">
+            <img
+              src="./images/project/antara/pool_table_ball_hall_1.png"
+              alt="pool_table_ball_hall_1"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/40 z-0"
+            ></div>
+            <div
+              class="absolute left-8 z-10 text-white top-4/5 md:left-20 transform -translate-y-1/2"
+            >
+              <h3
+                class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold mb-6 font-heading"
+              >
+                Multi-purpose Clubhouse
+              </h3>
+              <p
+                class="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl text-justify leading-relaxed font-paragraph w-[300px] md:w-[590px] lg:w-[650px] xl:w-[750px]"
+              >
+                A luxurious community space equipped for events, fitness, indoor
+                games, and social gatherings.
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="w-screen h-screen flex-shrink-0 relative">
+            <img
+              src="./images/project/antara/pool_table_ball_hall_2.png"
+              alt="pool_table_ball_hall_2"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/40 z-0"
+            ></div>
+            <div
+              class="absolute left-8 z-10 text-white top-4/5 md:left-20 transform -translate-y-1/2"
+            >
+              <h3
+                class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold mb-6 font-heading"
+              >
+                Premium Clubhouse Amenities
+              </h3>
+              <p
+                class="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl text-justify leading-relaxed font-paragraph w-[300px] md:w-[590px] lg:w-[650px] xl:w-[750px]"
+              >
+                Enjoy a state of the art clubhouse designed for fitness,
+                recreation, indoor games, and memorable social events all within
+                your community.
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="w-screen h-screen flex-shrink-0 relative">
+            <img
+              src="./images/gallery/gallery_2.jpeg"
+              alt="plots"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/40 z-0"
+            ></div>
+            <div
+              class="absolute left-8 z-10 text-white top-4/5 md:left-20 transform -translate-y-1/2"
+            >
+              <h3
+                class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold mb-6 font-heading"
+              >
+                Lush Green Landscape
+              </h3>
+              <p
+                class="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl text-justify leading-relaxed font-paragraph w-[300px] md:w-[590px] lg:w-[650px] xl:w-[750px]"
+              >
+                Experience nature within reach – beautifully designed plots
+                surrounded by greenery and tranquility to refresh your daily
+                life.
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="w-screen h-screen flex-shrink-0 relative">
+            <img
+              src="./images/galleryimage1.jpeg"
+              alt="galleryimage1"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/40 z-0"
+            ></div>
+            <div
+              class="absolute left-8 z-10 text-white top-4/5 md:left-20 transform -translate-y-1/2"
+            >
+              <h3
+                class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold mb-6 font-heading"
+              >
+                Scenic Hilltop Views
+              </h3>
+              <p
+                class="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl text-justify leading-relaxed font-paragraph w-[300px] md:w-[590px] lg:w-[650px] xl:w-[750px]"
+              >
+                Wake up to panoramic views of the hills — a perfect blend of
+                elevation and elegance in every direction you look.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    <!-- Horizontal Scroll Section END -->
 
     <div class="ml-[25px] sm:ml-[30px] md:ml-[40px] lg:ml-[70px] mt-[20px]">
       <div>
@@ -955,10 +1035,10 @@
         <div class="max-w-md mb-8">
           <img src="./images/eivaaiconwhite.png" class="mb-4 w-32" />
           <nav class="flex flex-wrap md:gap-4 text-sm">
-            <a href="#" class="hover:underline mr-6">Home</a>
-            <a href="#" class="hover:underline mr-6">About us</a>
-            <a href="#" class="hover:underline mr-6">Projects</a>
-            <a href="#" class="hover:underline mr-6">Contact us</a>
+            <a href="./index.html" class="hover:underline mr-6">Home</a>
+            <a href="./aboutus.html" class="hover:underline mr-6">About us</a>
+            <a href="./project.html" class="hover:underline mr-6">Projects</a>
+            <a href="./contact.html" class="hover:underline mr-6">Contact us</a>
           </nav>
         </div>
         <div class="max-w-md">

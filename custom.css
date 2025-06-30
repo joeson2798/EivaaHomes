@@ -93,6 +93,8 @@
 }
 
 
+
+/* Animation for scroll bounce effect project & anthara page Starts */
 @keyframes scrollBounce {
     0%, 100% {
       transform: translateY(0);
@@ -104,3 +106,16 @@
   .scroll-bounce {
     animation: scrollBounce 1.5s ease-in-out infinite;
   }
+  /* Animation for scroll bounce effect project & anthara page ends */
+
+
+
+  /* Home page Contact section form padding */
+
+  @media (min-width: 1024px) and (max-width: 1200px) {
+
+    #contactform {
+      padding: 20px;
+    }
+
+}
