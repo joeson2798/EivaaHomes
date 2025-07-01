@@ -241,7 +241,7 @@
         <div>
           <div
             class="number-ticker text-5xl font-bold text-gray-800"
-            data-value="15"
+            data-value="2"
           >
             <div class="digit">
               <div class="digit-inner"><div>0</div></div>
@@ -255,7 +255,7 @@
         >
           <div
             class="number-ticker text-5xl font-bold text-gray-800"
-            data-value="250"
+            data-value="2"
           >
             <div class="digit">
               <div class="digit-inner"><div>0</div></div>
@@ -348,7 +348,7 @@
         </div>
 
         <!-- Right Content -->
-        <div class="w-full lg:w-1/2 space-y-1 md:space-y-6">
+        <div class="w-full lg:w-1/2 space-y-1 md:space-y-6 mt-5 md:mt-0">
           <h2 class="text-xl md:text-3xl font-medium font-heading">
             Tailor Your Dream Home <br />
             <span class="text-yellow-700">with EIVAA HOMESS</span>
@@ -674,40 +674,6 @@
     <!-- Footer Section Ends-->
 
     <script>
-      const counters = document.querySelectorAll(".counter");
-      let triggered = false;
-
-      function runCounter() {
-        counters.forEach((counter) => {
-          const updateCount = () => {
-            const target = +counter.getAttribute("data-target");
-            const count = +counter.innerText;
-            const speed = 100;
-            const increment = Math.ceil(target / speed);
-
-            if (count < target) {
-              counter.innerText = count + increment;
-              setTimeout(updateCount, 30);
-            } else {
-              counter.innerText = target;
-            }
-          };
-          updateCount();
-        });
-      }
-
-      window.addEventListener("scroll", () => {
-        const sectionTop = document.querySelector(".counter-section").offsetTop;
-        const scrollTop = window.scrollY + window.innerHeight;
-
-        if (!triggered && scrollTop > sectionTop) {
-          runCounter();
-          triggered = true;
-        }
-      });
-    </script>
-
-    <script>
       // Mobile menu toggle
       const menuBtn = document.getElementById("menu-btn");
       const mobileMenu = document.getElementById("mobile-menu");
@@ -790,12 +756,7 @@
         project.rooms
       }</p>
     </div>
-    <div class="mb-4 ">
-      <h5 class="text-2xl font-medium font-heading">Price Range</h5>
-      <p class="text-xl text-gray-300 text-sm mt-2 font-paragraph fade-in-right delay-600">${
-        project.price
-      }</p>
-    </div>
+
   </div>
 `;
       }
@@ -844,66 +805,7 @@
         return text.length > limit ? text.substring(0, limit) + "..." : text;
       }
     </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const counters = document.querySelectorAll(".number-ticker");
-        let animated = false;
-
-        function createDigitScroller(digit) {
-          const wrapper = document.createElement("div");
-          wrapper.className = "digit";
-
-          const inner = document.createElement("div");
-          inner.className = "digit-inner";
-
-          // Create 0–9 for scrolling effect
-          for (let i = 0; i <= 9; i++) {
-            const d = document.createElement("div");
-            d.textContent = i;
-            inner.appendChild(d);
-          }
-
-          wrapper.appendChild(inner);
-          return { wrapper, inner, digit };
-        }
-
-        function animateCounter(el, value) {
-          const digits = value.toString().split("");
-          el.innerHTML = "";
-
-          digits.forEach((digit) => {
-            const { wrapper, inner } = createDigitScroller(digit);
-            el.appendChild(wrapper);
-
-            setTimeout(() => {
-              inner.style.transform = `translateY(-${digit * 1.25}em)`;
-            }, 100);
-          });
-        }
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting && !animated) {
-                setTimeout(() => {
-                  counters.forEach((counter) => {
-                    const finalVal = counter.getAttribute("data-value");
-                    animateCounter(counter, finalVal);
-                  });
-                  animated = true;
-                  observer.disconnect();
-                }, 300);
-              }
-            });
-          },
-          { threshold: 0.3 }
-        );
-
-        const section = document.querySelector(".counter-section");
-        observer.observe(section);
-      });
-    </script>
+    <script src="./js/custom.js"></script>
     <script>
       // Clear form always on load
       window.onload = function () {

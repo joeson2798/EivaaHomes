@@ -1,3 +1,65 @@
+@media (min-width:1818px) and (max-width: 2560px) {
+  .animatedblock4{
+    margin-bottom: 80px;
+  }
+}
+/* 1. 1525px–1536px (only for these widths) */
+@media (min-width:1525px) and (max-width:1535px) {
+  .animatedblock1 { margin-bottom: 60px; }
+  .animatedblock2 { margin-bottom: 60px; }
+  .animatedblock4 { margin-bottom: 60px; }
+  .animatedblock3 { margin-bottom: 60px; }
+}
+
+/* 2. 1503px–1524px */
+@media (min-width:1503px) and (max-width:1524px) {
+  .animatedblock3 { margin-bottom: 60px; }
+  .animatedblock4 { margin-bottom: 60px; }
+}
+
+/* 3. 1301px–1502px */
+@media (min-width:1301px) and (max-width:1502px) {
+  .animatedblock4 { margin-bottom: 60px; }
+}
+
+/* 4. 1099px–1280px */
+@media (min-width:1099px) and (max-width:1280px) {
+  .animatedblock1 { margin-bottom: 38px; }
+  .animatedblock2 { margin-bottom: 38px; }
+  .animatedblock3 { margin-bottom: 38px; }
+}
+
+/* 5. 1085px–1098px */
+@media (min-width:1085px) and (max-width:1098px) {
+  .animatedblock3 { margin-bottom: 40px; }
+}
+
+/* 6. 963px–1024px */
+@media (min-width:963px) and (max-width:1024px) {
+  .animatedblock4 { margin-bottom: 47px; }
+  .animatedblock2 { margin-bottom: 30px; }
+  .animatedblock1 { margin-bottom: 27px; }
+  .animatedblock3 { margin-bottom: 32px; }
+}
+
+/* 7. 853px–962px */
+@media (min-width:853px) and (max-width:962px) {
+  .animatedblock1 { margin-bottom: 20px; }
+  .animatedblock2 { margin-bottom: 20px; }
+  .animatedblock3 { margin-bottom: 30px; }
+  .animatedblock4 { margin-bottom: 25px; }
+}
+
+/* 8. 841px–852px */
+@media (min-width:841px) and (max-width:852px) {
+  .animatedblock3 { margin-bottom: 20px; }
+}
+
+/* 9. 785px–840px */
+@media (min-width:785px) and (max-width:840px) {
+  .animatedblock4 { margin-bottom: 20px; }
+}
+
 @media (min-width:636px) and (max-width:639px){
   .staticparablock3{
     position: absolute;
@@ -245,3 +307,4 @@
     width:90%;
   }
 }
+
