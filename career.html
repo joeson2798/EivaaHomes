@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eivaa Homes</title>
+
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon.png"
+      sizes="180x180"
+    />
+
+    <!-- AOS CSS -->
+    <link href="./js/aos.css" rel="stylesheet" />
+
+    <link href="./custom.css" rel="stylesheet" />
+
+    <script src="./js/tailwindbrowser.js"></script>
+
+    <script src="/form.js"></script>
+
+    <script src="./js/scroll.js"></script>
+
+    <link
+      href="./assets/fontawesome-free-6.7.2-web/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .digit {
+        display: inline-block;
+        height: 1.25em;
+        overflow: hidden;
+        width: auto;
+      }
+
+      .digit-inner {
+        transition: transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+
+      .digit-inner div {
+        height: 1.25em;
+        line-height: 1.25em;
+        text-align: center;
+        font-feature-settings: "tnum";
+      }
+
+      .number-ticker {
+        letter-spacing: 0;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-[#fdfaf5] scroll-smooth">
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-sm px-3 md:px-20"
+    >
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <a href="#" class="flex flex-shrink-0 items-center space-x-2">
+            <img
+              src="./images/eivaahomesslogo.png"
+              alt="Logo"
+              class="h-14 md:h-12"
+            />
+            <span class="font-semibold tracking-wide hidden">HOMESS</span>
+          </a>
+
+          <!-- Desktop Menu -->
+          <nav
+            class="hidden md:flex items-center text-sm font-medium font-paragraph"
+          >
+            <a
+              href="./index.html"
+              class="hover:text-[#b66a00] lg:text-base px-5 lg:px-6"
+              >HOME</a
+            >
+            <a
+              href="./aboutus.html"
+              class="hover:text-[#b66a00] lg:text-base px-5 lg:px-6"
+              >ABOUT US</a
+            >
+            <a
+              href="./gallery.html"
+              class="hover:text-[#b66a00] lg:text-base px-5 lg:px-6"
+              >GALLERY</a
+            >
+            <a
+              href="./project.html"
+              class="hover:text-[#b66a00] lg:text-base px-5 lg:px-6"
+              >PROJECTS</a
+            >
+            <a
+              href="./project.html"
+              class="text-[#b66a00] lg:text-base px-5 lg:px-6"
+              >CAREERS</a
+            >
+            <a
+              href="./contact.html"
+              class="hover:text-[#b66a00] lg:text-base px-5 lg:px-6"
+              >CONTACT</a
+            >
+          </nav>
+
+          <!-- Hamburger -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              class="text-gray-800 focus:outline-none text-2xl"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden flex-col space-y-3 pb-4 items-end text-right"
+        >
+          <a href="#" class="block text-sm text-[#b66a00]">HOME</a>
+          <a href="./aboutus.html" class="block text-sm hover:text-[#b66a00]"
+            >ABOUT US</a
+          >
+          <a href="./gallery.html" class="block text-sm hover:text-[#b66a00]"
+            >GALLERY</a
+          >
+          <a href="./project.html" class="block text-sm hover:text-[#b66a00]"
+            >PROJECTS</a
+          >
+          <a href="./career.html" class="block text-sm hover:text-[#b66a00]"
+            >CAREERS</a
+          >
+          <a href="./contact.html" class="block text-sm hover:text-[#b66a00]"
+            >CONTACT</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-white py-16 px-4 md:px-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Title & Description -->
+        <div class="mb-10">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4 font-heading">
+            Be part of our mission
+          </h2>
+          <p class="text-gray-600 text-lg font-paragraph">
+            We’re looking for passionate people to join us. We value clarity,
+            ownership, and teamwork to drive results.
+          </p>
+        </div>
+
+        <!-- Job Listings -->
+        <div class="space-y-8">
+          <!-- Job Card 1 -->
+          <div class="border-t pt-6">
+            <div class="flex flex-col md:flex-row md:justify-between">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 font-heading">
+                  Site Engineer
+                </h3>
+                <p class="text-gray-600 mt-1">
+                  Looking for an experienced site engineer to join our team.
+                </p>
+                <div class="flex gap-4 mt-3 text-sm text-gray-600">
+                  <span class="border px-3 py-1 rounded-full">On-site</span>
+                  <span class="border px-3 py-1 rounded-full">Full-time</span>
+                </div>
+
+                <!-- Toggle Button -->
+                <button
+                  onclick="toggleJD(this)"
+                  class="mt-4 text-sm text-blue-600 hover:underline"
+                >
+                  Read full job description
+                </button>
+
+                <!-- JD Content -->
+                <ul
+                  class="job-description mt-2 list-disc list-inside text-gray-700 text-sm hidden font-paragraph"
+                >
+                  <li>
+                    Supervise on-site activities and ensure safety compliance.
+                  </li>
+                  <li>Coordinate with architects and contractors.</li>
+                  <li>Prepare daily site reports and updates.</li>
+                  <li>Maintain material and labor cost records.</li>
+                </ul>
+              </div>
+              <div class="mt-4 md:mt-0 flex items-center">
+                <a
+                  href="#"
+                  class="text-black text-xl font-semibold hover:underline flex items-center gap-2"
+                >
+                  Apply
+                  <img
+                    src="images/project/arrow_icon.png"
+                    alt="arrow_icon"
+                    class="w-4 h-4 mt-[2px]"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job Card 2 -->
+          <div class="border-t pt-6">
+            <div class="flex flex-col md:flex-row md:justify-between">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 font-heading">
+                  Project Manager
+                </h3>
+                <p class="text-gray-600 mt-1">
+                  We’re hiring a project manager with experience in construction
+                  delivery.
+                </p>
+                <div class="flex gap-4 mt-3 text-sm text-gray-600">
+                  <span class="border px-3 py-1 rounded-full">Hybrid</span>
+                  <span class="border px-3 py-1 rounded-full">Contract</span>
+                </div>
+
+                <!-- Toggle Button -->
+                <button
+                  onclick="toggleJD(this)"
+                  class="mt-4 text-sm text-blue-600 hover:underline"
+                >
+                  Read full job description
+                </button>
+
+                <!-- JD Content -->
+                <ul
+                  class="job-description mt-2 list-disc list-inside text-gray-700 text-sm hidden"
+                >
+                  <li>Manage construction timelines and deliverables.</li>
+                  <li>Lead cross-functional teams on large-scale projects.</li>
+                  <li>Communicate directly with clients and stakeholders.</li>
+                  <li>Ensure on-time and on-budget project execution.</li>
+                </ul>
+              </div>
+              <div class="mt-4 md:mt-0 flex items-center">
+                <a
+                  href="#"
+                  class="text-black text-xl font-semibold hover:underline flex items-center gap-2"
+                >
+                  Apply
+                  <img
+                    src="images/project/arrow_icon.png"
+                    alt="arrow_icon"
+                    class="w-4 h-4 mt-[2px]"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simple JS for toggling -->
+    <script>
+      function toggleJD(button) {
+        const jd = button.nextElementSibling;
+        jd.classList.toggle("hidden");
+        button.textContent = jd.classList.contains("hidden")
+          ? "Read full job description"
+          : "Hide job description";
+      }
+    </script>
+
+    <!-- Footer Section Starts-->
+    <footer class="bg-[#061c2b] text-white px-6 md:px-20 pt-12 pb-6">
+      <div class="flex flex-col lg:flex-row justify-between mb-8 gap-8 mt-6">
+        <div class="max-w-md mb-8">
+          <img src="./images/eivaaiconwhite.png" class="mb-4 w-32" />
+          <nav class="flex flex-wrap md:gap-4 text-sm">
+            <a href="#" class="hover:underline mr-6">Home</a>
+            <a href="./aboutus.html" class="hover:underline mr-6">About us</a>
+            <a href="./project.html" class="hover:underline mr-6">Projects</a>
+            <a href="./contact.html" class="hover:underline mr-6">Contact us</a>
+          </nav>
+        </div>
+        <div class="max-w-md">
+          <p class="text-gray-300 mb-3">
+            Subscribe to stay tuned for new web design and latest updates. Let's
+            do it!
+          </p>
+          <form
+            method="POST"
+            action="subscribe.php"
+            id="subscribeForm"
+            class="flex flex-col sm:flex-row gap-3"
+          >
+            <input
+              type="email"
+              name="subscriber_email"
+              placeholder="Enter your email"
+              class="px-4 py-2 text-black w-full sm:w-auto bg-gray-100"
+              required
+            />
+            <button type="submit" class="bg-white text-black px-4 py-2">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="border-t border-white pt-4 text-sm flex flex-col md:flex-row justify-between items-center gap-2"
+      >
+        <!-- Policy Links -->
+        <div class="flex gap-4 mb-2 md:mb-0">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Legal</a>
+        </div>
+      </div>
+
+      <!-- Copyright + Social in One Row -->
+      <div class="flex items-center justify-between mt-4 text-xs text-gray-300">
+        <p>© 2021 All Rights Reserved</p>
+        <div class="flex gap-3 text-lg text-white ml-4">
+          <!-- <i class="fab fa-facebook-f"></i>
+          <i class="fas fa-paper-plane"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-linkedin-in"></i> -->
+          <img
+            src="./images/socialmedia/facebook-boxed.svg"
+            alt="facebook"
+            class="w-4 h-4"
+          />
+          <img
+            src="./images/socialmedia/instagram.svg"
+            class="w-4 h-4"
+            alt="instagram"
+          />
+          <img
+            src="./images/socialmedia/linkedin.svg"
+            class="w-4 h-4"
+            alt="linkedin"
+          />
+          <img
+            src="./images/socialmedia/twitter.svg"
+            class="w-4 h-4"
+            alt="twitter"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section Ends-->
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <script>
+      const lenis = new Lenis();
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
+  </body>
+</html>
