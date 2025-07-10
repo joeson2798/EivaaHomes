@@ -3,16 +3,16 @@
     "title": "Antara",
     "description": "An elegant collection of premium homes built with precision and passion. Experience the pinnacle of sophisticated living in our premium homes, each a testament to meticulous craftsmanship and modern design.",
     "image": "./images/galleryimage3.jpeg",
-    "squareFeet": "6×7 Sq feet",
-    "rooms": "03 Rooms",
+    "squareFeet": "4×5 Sq feet",
+    "rooms": "06 Rooms",
     "price": "1 - 3 Crores"
   },
   {
     "title": "Aalayam",
     "description": "Eivaa Aalayam is a thoughtfully crafted residential enclave designed for families seeking balance between modern comforts and spiritual calm.",
     "image": "./images/gallery/aalayam/straightstreetdayview_Post.jpg",
-    "squareFeet": "9×8 Sq feet",
-    "rooms": "04 Rooms",
+    "squareFeet": "3×6 Sq feet",
+    "rooms": "06 Rooms",
     "price": "2 - 5 Crores"
   }
 ]
